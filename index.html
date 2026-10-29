@@ -6,6 +6,7 @@
   <meta name="description" content="Scam Recovery Help provides practical guidance for reporting scams, preserving evidence, securing accounts, and avoiding recovery fraud.">
   <meta name="theme-color" content="#102b46">
   <title>Scam Recovery Help | Take Your Next Step</title>
+
   <style>
     :root {
       --navy: #102b46;
@@ -18,13 +19,14 @@
       --paper: #f5f7fa;
       --white: #fff;
       --border: #dce3eb;
-      --green: #176b52;
       --radius: 16px;
       --shadow: 0 12px 32px rgba(16,43,70,.08);
     }
 
     * { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -32,18 +34,26 @@
       background: var(--paper);
       line-height: 1.65;
     }
+
     a { color: var(--blue); }
-    a:focus-visible, button:focus-visible {
+
+    a:focus-visible {
       outline: 3px solid var(--gold);
       outline-offset: 3px;
     }
-    .container { width: min(1120px, 92%); margin: auto; }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
     .topbar {
       background: #0a2035;
       color: #eaf1f8;
       font-size: .83rem;
       padding: 8px 0;
     }
+
     .topbar-inner {
       display: flex;
       justify-content: space-between;
@@ -51,6 +61,7 @@
       gap: 12px;
       flex-wrap: wrap;
     }
+
     header {
       background: var(--white);
       border-bottom: 1px solid var(--border);
@@ -58,6 +69,7 @@
       top: 0;
       z-index: 10;
     }
+
     .nav-wrap {
       min-height: 82px;
       display: flex;
@@ -65,6 +77,7 @@
       justify-content: space-between;
       gap: 24px;
     }
+
     .brand {
       display: flex;
       align-items: center;
@@ -73,6 +86,7 @@
       text-decoration: none;
       min-width: 220px;
     }
+
     .brand-mark {
       width: 44px;
       height: 44px;
@@ -84,8 +98,21 @@
       font-size: 1.35rem;
       font-weight: 800;
     }
-    .brand-name { font-size: 1.03rem; font-weight: 800; line-height: 1.2; }
-    .brand-tagline { font-size: .74rem; color: var(--muted); margin-top: 3px; }
+
+    .brand-name {
+      display: block;
+      font-size: 1.03rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .brand-tagline {
+      display: block;
+      font-size: .74rem;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
     nav {
       display: flex;
       flex-wrap: wrap;
@@ -93,6 +120,7 @@
       justify-content: flex-end;
       gap: 5px;
     }
+
     nav a {
       text-decoration: none;
       color: #33475b;
@@ -101,22 +129,27 @@
       padding: 9px 11px;
       border-radius: 8px;
     }
-    nav a:hover, nav a[aria-current="page"] {
+
+    nav a:hover,
+    nav a[aria-current="page"] {
       background: var(--blue-light);
       color: var(--navy);
     }
+
     .hero {
       background: linear-gradient(125deg, #102b46 0%, #1a466d 65%, #28638b 100%);
       color: white;
       padding: 78px 0 72px;
       overflow: hidden;
     }
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1.2fr .8fr;
       gap: 48px;
       align-items: center;
     }
+
     .eyebrow {
       display: inline-block;
       color: #ffe1a0;
@@ -126,10 +159,28 @@
       text-transform: uppercase;
       margin-bottom: 15px;
     }
+
     h1, h2, h3 { line-height: 1.2; }
-    h1 { font-size: clamp(2.3rem, 5vw, 4rem); margin: 0 0 22px; letter-spacing: -.035em; }
-    .hero p { color: #e1ebf4; font-size: 1.1rem; max-width: 650px; }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+
+    h1 {
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      margin: 0 0 22px;
+      letter-spacing: -.035em;
+    }
+
+    .hero p {
+      color: #e1ebf4;
+      font-size: 1.1rem;
+      max-width: 650px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
     .btn {
       display: inline-flex;
       justify-content: center;
@@ -141,15 +192,27 @@
       border: 1px solid transparent;
       transition: transform .15s, background .15s;
     }
+
     .btn:hover { transform: translateY(-2px); }
-    .btn-gold { background: var(--gold); color: #17283a; }
-    .btn-light { border-color: #b9cfe1; color: white; background: transparent; }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #17283a;
+    }
+
+    .btn-light {
+      border-color: #b9cfe1;
+      color: white;
+      background: transparent;
+    }
+
     .hero-note {
       font-size: .83rem !important;
       border-left: 3px solid var(--gold);
       padding-left: 13px;
       margin-top: 25px;
     }
+
     .hero-card {
       background: rgba(255,255,255,.97);
       color: var(--ink);
@@ -157,8 +220,19 @@
       padding: 27px;
       box-shadow: 0 25px 55px rgba(0,0,0,.18);
     }
-    .hero-card h2 { margin: 0 0 8px; color: var(--navy); font-size: 1.4rem; }
-    .hero-card > p { color: var(--muted); font-size: .92rem; margin-top: 0; }
+
+    .hero-card h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1.4rem;
+    }
+
+    .hero-card > p {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-top: 0;
+    }
+
     .step {
       display: flex;
       gap: 13px;
@@ -166,7 +240,9 @@
       padding: 14px 0;
       border-bottom: 1px solid var(--border);
     }
+
     .step:last-child { border: 0; }
+
     .step-number {
       flex: 0 0 32px;
       width: 32px;
@@ -178,32 +254,84 @@
       color: var(--navy);
       font-weight: 800;
     }
-    .step strong { display: block; color: var(--navy); }
+
+    .step strong {
+      display: block;
+      color: var(--navy);
+    }
+
     .step small { color: var(--muted); }
-    .trust-strip { background: white; border-bottom: 1px solid var(--border); }
+
+    .trust-strip {
+      background: white;
+      border-bottom: 1px solid var(--border);
+    }
+
     .trust-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
       padding: 23px 0;
     }
-    .trust-item { display: flex; gap: 12px; align-items: center; }
-    .trust-icon {
-      width: 40px; height: 40px; display: grid; place-items: center;
-      background: var(--blue-light); border-radius: 10px; font-size: 1.15rem;
+
+    .trust-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
     }
-    .trust-item strong { display: block; font-size: .9rem; color: var(--navy); }
-    .trust-item span { display: block; font-size: .8rem; color: var(--muted); }
+
+    .trust-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background: var(--blue-light);
+      border-radius: 10px;
+      font-size: 1.15rem;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: .9rem;
+      color: var(--navy);
+    }
+
+    .trust-item span {
+      display: block;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
     section.content-section { padding: 70px 0; }
-    .section-heading { max-width: 700px; margin-bottom: 30px; }
-    .section-heading .eyebrow { color: var(--blue); margin-bottom: 8px; }
-    .section-heading h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--navy); margin: 0 0 12px; }
-    .section-heading p { color: var(--muted); margin: 0; }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      color: var(--navy);
+      margin: 0 0 12px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
     .card-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
+
     .info-card {
       background: white;
       padding: 25px;
@@ -214,27 +342,62 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
     .card-icon {
-      width: 48px; height: 48px;
-      display: grid; place-items: center;
-      border-radius: 12px; background: var(--blue-light);
-      font-size: 1.4rem; margin-bottom: 17px;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--blue-light);
+      font-size: 1.4rem;
+      margin-bottom: 17px;
     }
-    .info-card h3 { margin: 0 0 10px; font-size: 1.15rem; color: var(--navy); }
-    .info-card p { margin: 0 0 18px; color: var(--muted); font-size: .94rem; }
-    .card-link { margin-top: auto; font-weight: 800; text-decoration: none; }
+
+    .info-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      color: var(--navy);
+    }
+
+    .info-card p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .card-link {
+      margin-top: auto;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
     .card-link:hover { text-decoration: underline; }
+
     .urgent-section { background: #edf3f8; }
-    .urgent-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    .urgent-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
     .urgent-card {
       background: white;
       padding: 28px;
       border-radius: var(--radius);
       border: 1px solid var(--border);
     }
-    .urgent-card h3 { color: var(--navy); margin-top: 0; }
+
+    .urgent-card h3 {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
     .urgent-card ul { padding-left: 21px; }
+
     .urgent-card li { margin: 8px 0; }
+
     .notice {
       border-left: 4px solid var(--gold);
       background: #fff8e8;
@@ -242,14 +405,36 @@
       border-radius: 0 10px 10px 0;
       font-size: .92rem;
     }
-    .countries { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
-    .country {
-      background: white; border: 1px solid var(--border); border-radius: 12px;
-      padding: 18px 14px; text-decoration: none; color: var(--navy);
-      font-weight: 800; text-align: center;
+
+    .countries {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
     }
-    .country:hover { border-color: var(--blue); background: var(--blue-light); }
-    .country small { display: block; color: var(--muted); font-weight: 400; margin-top: 5px; }
+
+    .country {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 14px;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .country:hover {
+      border-color: var(--blue);
+      background: var(--blue-light);
+    }
+
+    .country small {
+      display: block;
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 5px;
+    }
+
     .final-cta {
       background: var(--navy);
       color: white;
@@ -260,33 +445,104 @@
       align-items: center;
       gap: 25px;
     }
+
     .final-cta h2 { margin: 0 0 8px; }
-    .final-cta p { color: #d6e4ef; margin: 0; }
-    footer { background: #091c2e; color: #c8d5e1; padding: 40px 0 22px; }
-    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 35px; }
-    footer h3 { color: white; font-size: 1rem; }
-    footer a { color: #dce9f5; text-decoration: none; }
+
+    .final-cta p {
+      color: #d6e4ef;
+      margin: 0;
+    }
+
+    footer {
+      background: #091c2e;
+      color: #c8d5e1;
+      padding: 40px 0 22px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      color: white;
+      font-size: 1rem;
+    }
+
+    footer a {
+      color: #dce9f5;
+      text-decoration: none;
+    }
+
     footer a:hover { text-decoration: underline; }
-    .footer-links { display: grid; gap: 8px; font-size: .9rem; }
-    .footer-bottom { border-top: 1px solid #294052; margin-top: 28px; padding-top: 18px; font-size: .8rem; }
-    .disclaimer { font-size: .84rem; color: #9eb0bf; }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+      font-size: .9rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #294052;
+      margin-top: 28px;
+      padding-top: 18px;
+      font-size: .8rem;
+    }
+
+    .disclaimer {
+      font-size: .84rem;
+      color: #9eb0bf;
+    }
+
     @media (max-width: 900px) {
-      .nav-wrap { padding: 14px 0; align-items: flex-start; flex-direction: column; gap: 12px; }
+      .nav-wrap {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
       nav { justify-content: flex-start; }
       .hero-grid { grid-template-columns: 1fr; }
       .hero-card { max-width: 600px; }
       .card-grid { grid-template-columns: repeat(2, 1fr); }
       .countries { grid-template-columns: repeat(3, 1fr); }
     }
+
     @media (max-width: 600px) {
       .hero { padding: 55px 0; }
-      .trust-grid, .card-grid, .urgent-grid, .footer-grid { grid-template-columns: 1fr; }
+
+      .trust-grid,
+      .card-grid,
+      .urgent-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
       .countries { grid-template-columns: repeat(2, 1fr); }
-      .final-cta { padding: 28px; align-items: flex-start; flex-direction: column; }
+
+      .final-cta {
+        padding: 28px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
       nav a { padding: 7px 9px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="topbar">
     <div class="container topbar-inner">
@@ -304,6 +560,7 @@
           <span class="brand-tagline">Information. Protection. Next steps.</span>
         </span>
       </a>
+
       <nav aria-label="Main navigation">
         <a href="index.html" aria-current="page">Home</a>
         <a href="report.html">Report a Scam</a>
@@ -322,15 +579,18 @@
         <div>
           <span class="eyebrow">Clear guidance when it matters</span>
           <h1>Been scammed? Know what to do next.</h1>
+
           <p>
             A scam can leave you feeling confused, pressured, and unsure who to trust.
             Get practical steps for protecting yourself, preserving evidence, reporting
             fraud, and understanding your options.
           </p>
+
           <div class="hero-actions">
             <a class="btn btn-gold" href="report.html">Report a scam</a>
             <a class="btn btn-light" href="recovery.html">Explore recovery steps</a>
           </div>
+
           <p class="hero-note">
             We are an independent information website, not a government agency,
             law firm, bank, or fund-recovery service.
@@ -340,21 +600,37 @@
         <aside class="hero-card" aria-label="Immediate steps after a scam">
           <h2>Start with these steps</h2>
           <p>If you've just been targeted, focus on safety first.</p>
+
           <div class="step">
             <span class="step-number">1</span>
-            <div><strong>Stop sending money</strong><small>Do not pay extra fees or taxes demanded by the suspected scammer.</small></div>
+            <div>
+              <strong>Stop sending money</strong>
+              <small>Do not pay extra fees or taxes demanded by the suspected scammer.</small>
+            </div>
           </div>
+
           <div class="step">
             <span class="step-number">2</span>
-            <div><strong>Contact your provider</strong><small>Ask your bank, payment app, card issuer, or exchange what action is possible.</small></div>
+            <div>
+              <strong>Contact your provider</strong>
+              <small>Ask your bank, payment app, card issuer, or exchange what action is possible.</small>
+            </div>
           </div>
+
           <div class="step">
             <span class="step-number">3</span>
-            <div><strong>Secure your accounts</strong><small>Change exposed passwords and enable multi-factor authentication.</small></div>
+            <div>
+              <strong>Secure your accounts</strong>
+              <small>Change exposed passwords and enable multi-factor authentication.</small>
+            </div>
           </div>
+
           <div class="step">
             <span class="step-number">4</span>
-            <div><strong>Keep your evidence</strong><small>Save messages, receipts, account details, dates, and transaction references.</small></div>
+            <div>
+              <strong>Keep your evidence</strong>
+              <small>Save messages, receipts, account details, dates, and transaction references.</small>
+            </div>
           </div>
         </aside>
       </div>
@@ -364,15 +640,26 @@
       <div class="container trust-grid">
         <div class="trust-item">
           <div class="trust-icon" aria-hidden="true">✓</div>
-          <div><strong>Practical information</strong><span>Understand common next steps.</span></div>
+          <div>
+            <strong>Practical information</strong>
+            <span>Understand common next steps.</span>
+          </div>
         </div>
+
         <div class="trust-item">
           <div class="trust-icon" aria-hidden="true">⌕</div>
-          <div><strong>Official reporting routes</strong><span>Find relevant agencies and providers.</span></div>
+          <div>
+            <strong>Official reporting routes</strong>
+            <span>Find relevant agencies and providers.</span>
+          </div>
         </div>
+
         <div class="trust-item">
           <div class="trust-icon" aria-hidden="true">!</div>
-          <div><strong>Recovery-scam awareness</strong><span>Recognize a second attempt to defraud you.</span></div>
+          <div>
+            <strong>Recovery-scam awareness</strong>
+            <span>Recognize a second attempt to defraud you.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -389,11 +676,239 @@
           <article class="info-card">
             <div class="card-icon" aria-hidden="true">📋</div>
             <h3>Report a Scam</h3>
-            <p>Learn how to report fraud to the appropriate authorities and notify your bank or payment provider.</p>
+            <p>
+              Learn how to report fraud to the appropriate authorities and notify
+              your bank or payment provider.
+            </p>
             <a class="card-link" href="report.html">View reporting guidance →</a>
           </article>
 
           <article class="info-card">
             <div class="card-icon" aria-hidden="true">🗂️</div>
             <h3>Evidence Center</h3>
-            <p>Discover what to preserve,
+            <p>
+              Discover what to preserve, how to organize transaction records,
+              and how to keep important evidence safe.
+            </p>
+            <a class="card-link" href="evidence.html">Organize your evidence →</a>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">🧭</div>
+            <h3>Recovery Guide</h3>
+            <p>
+              Explore general steps to take after a scam and learn which
+              payment providers or organizations to contact.
+            </p>
+            <a class="card-link" href="recovery.html">Explore recovery steps →</a>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">🔐</div>
+            <h3>Security Center</h3>
+            <p>
+              Learn how to strengthen passwords, protect accounts, secure devices,
+              and reduce the risk of further losses.
+            </p>
+            <a class="card-link" href="security.html">Improve your security →</a>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">⚠️</div>
+            <h3>Scam Alerts</h3>
+            <p>
+              Learn about common scam patterns, suspicious approaches,
+              impersonation tactics, and warning signs.
+            </p>
+            <a class="card-link" href="alerts.html">Recognize scam patterns →</a>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon" aria-hidden="true">ℹ️</div>
+            <h3>About This Website</h3>
+            <p>
+              Understand the purpose of this resource, its independence,
+              and the limits of the guidance it provides.
+            </p>
+            <a class="card-link" href="about.html">Learn about us →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section urgent-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Protect yourself</span>
+          <h2>If you've just been scammed</h2>
+          <p>
+            Acting promptly may help protect your accounts and clarify
+            what options are available.
+          </p>
+        </div>
+
+        <div class="urgent-grid">
+          <article class="urgent-card">
+            <h3>What to do first</h3>
+            <ul>
+              <li>Stop communicating with anyone pressuring you to send more money.</li>
+              <li>Contact your bank or payment provider using its official website or app.</li>
+              <li>Ask whether a transaction can be stopped, disputed, or reviewed.</li>
+              <li>Change compromised passwords and secure affected accounts.</li>
+              <li>Save relevant messages, receipts, dates, and transaction references.</li>
+              <li>Consider making a report to the appropriate official authority.</li>
+            </ul>
+            <a class="card-link" href="recovery.html">Read the Recovery Guide →</a>
+          </article>
+
+          <article class="urgent-card">
+            <h3>What not to do</h3>
+            <ul>
+              <li>Do not send additional payments to unlock an alleged refund.</li>
+              <li>Do not share passwords, one-time codes, or wallet recovery phrases.</li>
+              <li>Do not install remote-access software at a stranger's request.</li>
+              <li>Do not trust guarantees that lost money will definitely be recovered.</li>
+              <li>Do not delete useful evidence before preserving a copy.</li>
+              <li>Verify contact details independently before calling or clicking.</li>
+            </ul>
+            <a class="card-link" href="alerts.html">Learn about scam warning signs →</a>
+          </article>
+        </div>
+
+        <div class="notice" style="margin-top:24px">
+          <strong>Important:</strong> Recovery is never guaranteed. The options available
+          depend on the payment method, timing, circumstances, and the organizations
+          involved. Contact your financial provider promptly for advice specific to you.
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Resources around the world</span>
+          <h2>Find the right reporting route</h2>
+          <p>
+            Reporting procedures vary by country. Use the reporting guide to
+            find relevant official resources and confirm details directly.
+          </p>
+        </div>
+
+        <div class="countries">
+          <a class="country" href="report.html">
+            United States
+            <small>Reporting resources</small>
+          </a>
+
+          <a class="country" href="report.html">
+            United Kingdom
+            <small>Reporting resources</small>
+          </a>
+
+          <a class="country" href="report.html">
+            Nigeria
+            <small>Reporting resources</small>
+          </a>
+
+          <a class="country" href="report.html">
+            Canada
+            <small>Reporting resources</small>
+          </a>
+
+          <a class="country" href="report.html">
+            Australia
+            <small>Reporting resources</small>
+          </a>
+        </div>
+
+        <p style="color:var(--muted);font-size:.9rem;margin-top:18px">
+          These links open the reporting guide; they are not direct links to
+          individual government agencies. Other countries are covered there too.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="final-cta">
+          <div>
+            <h2>Take one step at a time.</h2>
+            <p>
+              Start with the task that matters most: reporting the incident,
+              preserving evidence, or securing an account.
+            </p>
+          </div>
+
+          <div class="hero-actions" style="margin-top:0">
+            <a class="btn btn-gold" href="report.html">Find reporting resources</a>
+            <a class="btn btn-light" href="evidence.html">Preserve evidence</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" style="color:white">
+            <span class="brand-mark" aria-hidden="true">SR</span>
+            <span>
+              <span class="brand-name" style="color:white">Scam Recovery Help</span>
+              <span class="brand-tagline" style="color:#c8d5e1">
+                Information. Protection. Next steps.
+              </span>
+            </span>
+          </a>
+
+          <p class="disclaimer">
+            An independent educational resource for scam awareness,
+            reporting guidance, evidence preservation, and online security.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report a Scam</a>
+            <a href="evidence.html">Evidence Center</a>
+            <a href="recovery.html">Recovery Guide</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>More Information</h3>
+          <div class="footer-links">
+            <a href="security.html">Security Center</a>
+            <a href="alerts.html">Scam Alerts</a>
+            <a href="about.html">About This Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          <strong>Disclaimer:</strong> Scam Recovery Help is not a government agency,
+          law firm, bank, or fund-recovery service. This website provides general
+          educational information only and does not guarantee recovery of money.
+        </p>
+        <p>
+          Verify external resources independently and contact the relevant official
+          organization for guidance about your individual circumstances.
+        </p>
+        <p>
+          &copy; <span id="current-year"></span> Scam Recovery Help.
+          Educational information only.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>

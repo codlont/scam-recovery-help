@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn practical steps to take after a scam, contact payment providers, protect accounts, and understand the limits of fund recovery.">
+  <meta name="theme-color" content="#102b46">
+  <title>Recovery Guide | Scam Recovery Help</title>
+
+  <style>
+    :root {
+      --navy: #102b46;
+      --navy-light: #1a466d;
+      --blue: #2463a0;
+      --pale-blue: #eaf2fb;
+      --gold: #e8b85b;
+      --ink: #1d2937;
+      --muted: #607080;
+      --paper: #f5f7fa;
+      --white: #ffffff;
+      --border: #dce3eb;
+      --green: #176b4d;
+      --red: #a62f35;
+      --radius: 16px;
+      --shadow: 0 8px 28px rgba(16, 43, 70, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    a {
+      color: var(--blue);
+      overflow-wrap: anywhere;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .brand-tagline {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+
+    nav a {
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      background: var(--pale-blue);
+      color: var(--navy);
+    }
+
+    .hero {
+      padding: 66px 0 58px;
+      background: linear-gradient(125deg, var(--navy), var(--navy-light));
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 0 18px;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0;
+      color: #e3edf7;
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 17px;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      filter: brightness(0.96);
+    }
+
+    .button-outline {
+      border-color: #8da7c1;
+      background: transparent;
+      color: var(--white);
+    }
+
+    main {
+      padding: 42px 0 64px;
+    }
+
+    .urgent {
+      margin-bottom: 36px;
+      padding: 22px;
+      border: 1px solid #ead7a8;
+      border-radius: var(--radius);
+      background: #fff9e9;
+    }
+
+    .urgent h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .urgent p {
+      margin: 0;
+      color: #5b4c2d;
+      font-size: 14px;
+    }
+
+    .section-heading {
+      margin-bottom: 22px;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.2;
+    }
+
+    .section-heading p {
+      max-width: 780px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .steps {
+      display: grid;
+      gap: 16px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 18px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .step-number {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--pale-blue);
+      color: var(--blue);
+      font-size: 19px;
+      font-weight: 800;
+    }
+
+    .step h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .step p {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .step ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .step li + li {
+      margin-top: 6px;
+    }
+
+    .content-section {
+      margin-top: 52px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 19px;
+    }
+
+    .card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card li + li {
+      margin-top: 7px;
+    }
+
+    .compare-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--pale-blue);
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    td {
+      color: var(--muted);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .warning-list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .warning-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .warning-list li::before {
+      content: "!";
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #fbe7e7;
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--white);
+    }
+
+    summary {
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .bottom-cta {
+      margin-top: 48px;
+      padding: 30px;
+      border-radius: var(--radius);
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .bottom-cta h2 {
+      margin: 0 0 8px;
+      font-size: 25px;
+    }
+
+    .bottom-cta p {
+      max-width: 740px;
+      margin: 0 0 18px;
+      color: #dce8f5;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-inner p {
+      max-width: 680px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .nav-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 48px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .step {
+        grid-template-columns: 42px 1fr;
+        gap: 12px;
+        padding: 18px;
+      }
+
+      .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+
+      th,
+      td {
+        min-width: 150px;
+        padding: 12px;
+      }
+    }
+
+    @media print {
+      header,
+      .hero-actions,
+      .bottom-cta,
+      footer {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      main {
+        padding: 0;
+      }
+
+      .step,
+      .card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Scam Recovery Help home">
+        <span class="brand-mark" aria-hidden="true">SR</span>
+        <span>
+          <span class="brand-name">Scam Recovery Help</span>
+          <span class="brand-tagline">Information. Protection. Next steps.</span>
+        </span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="report.html">Report a Scam</a>
+        <a href="evidence.html">Evidence Center</a>
+        <a href="recovery.html" aria-current="page">Recovery Guide</a>
+        <a href="security.html">Security</a>
+        <a href="alerts.html">Scam Alerts</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="eyebrow">Recovery Guide</span>
+      <h1>Take the next step after a scam.</h1>
+      <p>
+        If you have lost money, shared personal information, or given someone
+        access to an account, prompt action can help protect what remains and
+        preserve any available options. Start with the steps that match your
+        situation.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button" href="#first-steps">Start with immediate steps</a>
+        <a class="button button-outline" href="evidence.html">Organize your evidence</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="urgent">
+      <h2>First priority: limit further loss</h2>
+      <p>
+        Contact your bank, card issuer, mobile-money provider, cryptocurrency
+        platform, or other payment service through independently verified
+        official channels. Explain that you suspect fraud and ask what urgent
+        actions are available. If your account or device is compromised, secure
+        it from a trusted device. Do not wait to finish this guide before
+        reporting an urgent incident.
+      </p>
+    </section>
+
+    <section id="first-steps">
+      <div class="section-heading">
+        <h2>What to do first</h2>
+        <p>
+          These steps are a general guide. The right process depends on the
+          payment method, provider, country, and how long ago the incident
+          occurred.
+        </p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3>Contact the payment provider</h3>
+            <p>
+              Use the official number on your bank card, the provider's verified
+              website, or the secure app you normally use.
+            </p>
+            <ul>
+              <li>State clearly that you suspect a scam or unauthorized transaction.</li>
+              <li>Ask whether a transfer can be stopped, recalled, traced, or disputed.</li>
+              <li>Ask about card cancellation, account restrictions, and replacement credentials where appropriate.</li>
+              <li>Request a case or complaint reference number.</li>
+              <li>Record the date, time, and instructions you receive.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3>Secure affected accounts</h3>
+            <p>
+              If you shared login details, payment credentials, or remote access,
+              treat account security as urgent.
+            </p>
+            <ul>
+              <li>Change compromised passwords using a trusted device.</li>
+              <li>Change reused passwords on other important accounts.</li>
+              <li>Enable multi-factor authentication where available.</li>
+              <li>Sign out unknown sessions and review account recovery settings.</li>
+              <li>Contact your mobile provider if you suspect a SIM swap or loss of phone-number control.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">3</div>
+          <div>
+            <h3>Preserve the evidence</h3>
+            <p>
+              Keep relevant records before deleting messages or closing accounts.
+              Store copies securely and avoid altering originals.
+            </p>
+            <ul>
+              <li>Save receipts, statements, transaction IDs, and recipient details.</li>
+              <li>Preserve emails, messages, phone numbers, usernames, and website addresses.</li>
+              <li>Prepare a simple timeline of events.</li>
+              <li>Keep any case numbers and replies from providers or authorities.</li>
+            </ul>
+            <p><a href="evidence.html">Open the Evidence Center checklist</a></p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">4</div>
+          <div>
+            <h3>Report the incident through appropriate channels</h3>
+            <p>
+              Report to the relevant financial provider, online platform, and
+              appropriate authority in your country. A report does not guarantee
+              reimbursement, but it may help document the incident and support
+              an investigation.
+            </p>
+            <ul>
+              <li>Use official reporting websites and verified contact details.</li>
+              <li>Give accurate information and distinguish facts from suspicions.</li>
+              <li>Ask how to submit supporting evidence safely.</li>
+              <li>Keep a copy of your report and its reference number.</li>
+            </ul>
+            <p><a href="report.html">Find reporting guidance</a></p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">5</div>
+          <div>
+            <h3>Monitor your accounts and follow up</h3>
+            <p>
+              Review statements, notifications, login activity, and credit or
+              identity alerts where available. Follow up with your provider using
+              your case reference.
+            </p>
+            <ul>
+              <li>Check for additional transactions or account changes you do not recognize.</li>
+              <li>Keep a record of each follow-up and response.</li>
+              <li>Ask about complaint escalation or dispute deadlines.</li>
+              <li>Respond promptly to legitimate requests for information, using secure channels.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Recovery steps by payment method</h2>
+        <p>
+          Different payment types have different rules. Contact the provider
+          promptly and ask about the specific options that apply to your case.
+        </p>
+      </div>
+
+      <div class="compare-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Payment type</th>
+              <th scope="col">What to ask the provider</th>
+              <th scope="col">Important consideration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bank transfer</td>
+              <td>
+                Can the transfer be recalled or traced? Can the receiving
+                institution be notified? Is a formal fraud claim required?
+              </td>
+              <td>
+                Transfers may be difficult to reverse once processed. A recall
+                request is not a guarantee of recovery.
+              </td>
+            </tr>
+            <tr>
+              <td>Debit or credit card</td>
+              <td>
+                Can the card be blocked or replaced? Can the transaction be
+                disputed? What evidence and deadlines apply?
+              </td>
+              <td>
+                The process depends on the transaction, card terms, local rules,
+                and whether the payment was authorized or unauthorized.
+              </td>
+            </tr>
+            <tr>
+              <td>Mobile money</td>
+              <td>
+                Can the transaction be flagged, traced, or escalated? What
+                complaint process and reference number should you use?
+              </td>
+              <td>
+                Act quickly and use the provider's verified customer-support
+                channels.
+              </td>
+            </tr>
+            <tr>
+              <td>Payment app or online wallet</td>
+              <td>
+                Can the payment be disputed? Can the recipient or account be
+                reported? Can unauthorized access be stopped?
+              </td>
+              <td>
+                Peer-to-peer payments and payments outside a platform's
+                protected checkout may have limited protections.
+              </td>
+            </tr>
+            <tr>
+              <td>Cryptocurrency</td>
+              <td>
+                Can the exchange secure your account, preserve records, or flag
+                relevant wallet addresses? What incident-reporting process exists?
+              </td>
+              <td>
+                Blockchain transfers are generally irreversible. Be cautious of
+                anyone claiming they can guarantee a reversal.
+              </td>
+            </tr>
+            <tr>
+              <td>Gift cards or vouchers</td>
+              <td>
+                Can the issuer check the balance, flag the card, or document
+                redemption details? What records are needed?
+              </td>
+              <td>
+                Keep the card, receipt, and redemption details private. Do not
+                share unused codes with strangers.
+              </td>
+            </tr>
+            <tr>
+              <td>Cash or cash courier</td>
+              <td>
+                If a legitimate transfer or delivery service was involved, can
+                the transaction be stopped or reported?
+              </td>
+              <td>
+                Recovery may be difficult. Preserve receipts, messages, and
+                delivery information and report promptly.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>What if you shared personal information?</h2>
+        <p>
+          You do not need to have lost money for a scam to create a security
+          risk. Take steps based on the information you disclosed.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Password or login details</h3>
+          <p>
+            Change the affected password from a trusted device and review other
+            accounts where you reused it.
+          </p>
+          <ul>
+            <li>Enable multi-factor authentication.</li>
+            <li>Review recovery email addresses and phone numbers.</li>
+            <li>Sign out sessions you do not recognize.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Bank or card information</h3>
+          <p>
+            Contact the financial provider using verified contact details and
+            explain what was disclosed.
+          </p>
+          <ul>
+            <li>Ask whether the card or account should be blocked or replaced.</li>
+            <li>Monitor transactions and account alerts.</li>
+            <li>Never share your PIN or one-time authentication codes.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Identity documents</h3>
+          <p>
+            Seek guidance from the relevant identity-document issuer or local
+            authority about possible misuse and protective measures.
+          </p>
+          <ul>
+            <li>Keep a record of what was shared and with whom.</li>
+            <li>Watch for unexpected applications or account activity.</li>
+            <li>Follow the official process for reporting identity misuse.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Remote access to a device</h3>
+          <p>
+            If someone remotely controlled your device, disconnect the session
+            and seek trusted technical help if needed.
+          </p>
+          <ul>
+            <li>Remove remote-access software you do not trust.</li>
+            <li>Run reputable security checks and update your device.</li>
+            <li>Change important passwords from a different trusted device.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Recognize recovery scams</h2>
+        <p>
+          People who have already lost money may be targeted again by someone
+          claiming to be able to retrieve it.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Warning signs to take seriously</h3>
+        <ul class="warning-list">
+          <li>
+            Someone guarantees that your money will be recovered or promises
+            a specific result without reviewing the facts.
+          </li>
+          <li>
+            You are asked to pay an upfront fee, tax, deposit, activation charge,
+            or release fee to unlock supposed recovered funds.
+          </li>
+          <li>
+            A person claims to represent a bank, government agency, police unit,
+            lawyer, or recovery firm but cannot be independently verified.
+          </li>
+          <li>
+            You are pressured to act immediately, keep the arrangement secret,
+            or move the conversation to an unverified messaging account.
+          </li>
+          <li>
+            Someone asks for your password, private key, seed phrase, PIN,
+            one-time code, or remote access to your device.
+          </li>
+          <li>
+            You are asked to send cryptocurrency or another payment to prove
+            ownership or receive a supposed refund.
+          </li>
+        </ul>
+        <p>
+          Verify any service independently. Do not rely on testimonials,
+          screenshots, social-media followers, or documents supplied only by
+          the person contacting you.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Frequently asked questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>Can I definitely get my money back?</summary>
+          <p>
+            No. Recovery depends on factors such as the payment method, timing,
+            provider rules, the recipient's account, and applicable law. Some
+            payments may be disputed or recalled, but others cannot be reversed.
+            Contact the provider promptly and ask about your actual options.
+          </p>
+        </details>
+
+        <details>
+          <summary>Should I pay a recovery agent upfront?</summary>
+          <p>
+            Be extremely cautious. Upfront fees combined with guaranteed
+            recovery claims are a common warning sign. Independently verify
+            any organization and do not send additional money to an unverified
+            person claiming to recover your loss.
+          </p>
+        </details>
+
+        <details>
+          <summary>Should I delete messages from the scammer?</summary>
+          <p>
+            Preserve relevant messages and records when possible. You can block
+            or report the account after preserving evidence. If your device or
+            account is at risk, prioritize safety and follow appropriate
+            security guidance.
+          </p>
+        </details>
+
+        <details>
+          <summary>What if the payment happened several weeks or months ago?</summary>
+          <p>
+            Contact the provider anyway. Some options may have deadlines, so
+            ask what remains available. Organize your records and report through
+            appropriate channels even if you are unsure whether recovery is
+            possible.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does filing a police or cybercrime report guarantee a refund?</summary>
+          <p>
+            No. A report documents the incident and may support an investigation,
+            but it does not by itself guarantee that funds will be returned.
+            You may also need to contact the payment provider directly.
+          </p>
+        </details>
+
+        <details>
+          <summary>What should I do if I feel embarrassed or overwhelmed?</summary>
+          <p>
+            Scams are designed to manipulate people, and being targeted does
+            not mean you deserved what happened. Consider asking a trusted
+            person to help organize records or make calls. Focus first on
+            preventing further loss and securing your accounts.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="bottom-cta">
+      <h2>Take your next step</h2>
+      <p>
+        Contact the relevant payment provider, preserve your records, secure
+        affected accounts, and report the incident through appropriate
+        channels. There is no guaranteed recovery method, and you should never
+        have to hand over passwords or private keys to seek help.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="report.html">Reporting guidance</a>
+        <a class="button button-outline" href="evidence.html">Evidence checklist</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>
+        <strong>Scam Recovery Help</strong><br>
+        Independent informational resource. This website is not a government
+        agency, law-enforcement body, bank, law firm, or recovery service.
+        It does not provide legal or financial advice and cannot guarantee
+        recovery of funds. Verify organizations and reporting channels
+        independently.
+      </p>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="report.html">Report</a>
+        <a href="evidence.html">Evidence Center</a>
+        <a href="security.html">Security</a>
+        <a href="alerts.html">Scam Alerts</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

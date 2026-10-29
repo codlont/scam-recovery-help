@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | Scam Recovery Help</title>
+
+  <meta name="description" content="Learn about Scam Recovery Help, an independent educational resource providing information about scam reporting, evidence preservation, account security, and recovery options.">
+
+  <meta name="theme-color" content="#102b46">
+
+  <style>
+    :root {
+      --navy: #102b46;
+      --navy-light: #1a466d;
+      --blue: #2463a0;
+      --pale-blue: #eaf2fb;
+      --gold: #e8b85b;
+      --ink: #1d2937;
+      --muted: #607080;
+      --paper: #f5f7fa;
+      --white: #ffffff;
+      --border: #dce3eb;
+      --success-bg: #edf7f0;
+      --success-ink: #24613d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      background: var(--navy);
+      color: var(--white);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: var(--white);
+      text-decoration: none;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 8px;
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .brand-tagline {
+      display: block;
+      margin-top: 4px;
+      font-size: 12px;
+      color: #d8e4f1;
+      letter-spacing: 0.3px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .main-nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 5px;
+    }
+
+    .main-nav a:hover,
+    .main-nav a[aria-current="page"] {
+      background: var(--navy-light);
+      color: var(--gold);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      color: var(--white);
+      padding: 72px 0 68px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+    }
+
+    .hero h1 {
+      max-width: 780px;
+      margin: 0 0 20px;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.13;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0;
+      color: #e0e9f3;
+      font-size: 18px;
+    }
+
+    .hero-note {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 10px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 13px;
+    }
+
+    main {
+      padding: 48px 0 64px;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 28px;
+      align-items: stretch;
+      margin-bottom: 32px;
+    }
+
+    .panel {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 5px 18px rgba(16, 43, 70, 0.04);
+    }
+
+    .panel h2,
+    .section-heading {
+      margin-top: 0;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    .panel h2 {
+      margin-bottom: 14px;
+      font-size: 25px;
+    }
+
+    .panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .purpose-panel {
+      border-top: 4px solid var(--gold);
+    }
+
+    .independence-panel {
+      background: var(--pale-blue);
+      border-color: #d5e3f4;
+    }
+
+    .section {
+      margin-top: 44px;
+    }
+
+    .section-heading {
+      margin-bottom: 12px;
+      font-size: 30px;
+    }
+
+    .section-intro {
+      max-width: 780px;
+      margin: 0 0 24px;
+      color: var(--muted);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 24px;
+    }
+
+    .feature-number {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      background: var(--pale-blue);
+      color: var(--navy);
+      border-radius: 8px;
+      font-weight: 800;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 9px;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .principle {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .principle-icon {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      background: var(--success-bg);
+      color: var(--success-ink);
+      border-radius: 50%;
+      font-weight: 800;
+    }
+
+    .principle h3 {
+      margin: 0 0 5px;
+      color: var(--navy);
+      font-size: 16px;
+    }
+
+    .principle p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .resource-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .resource-link {
+      display: block;
+      padding: 18px 20px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .resource-link:hover {
+      border-color: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    .resource-link strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--navy);
+      font-size: 16px;
+    }
+
+    .resource-link span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .notice {
+      margin-top: 40px;
+      padding: 26px 28px;
+      background: #fff8e8;
+      border: 1px solid #eedba9;
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+    }
+
+    .notice h2 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 22px;
+    }
+
+    .notice p {
+      margin: 0 0 12px;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px;
+    }
+
+    summary {
+      color: var(--navy);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .cta {
+      margin-top: 44px;
+      padding: 36px;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    .cta p {
+      max-width: 680px;
+      margin: 0 auto 22px;
+      color: #dce6f0;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      background: var(--gold);
+      color: var(--navy);
+      border: 2px solid var(--gold);
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .button:hover {
+      background: #f3cb79;
+      border-color: #f3cb79;
+    }
+
+    .button-secondary {
+      background: transparent;
+      color: var(--white);
+      border-color: #8ca6c0;
+    }
+
+    .button-secondary:hover {
+      background: var(--navy-light);
+      color: var(--white);
+      border-color: var(--white);
+    }
+
+    .site-footer {
+      background: #0b2035;
+      color: #d8e2ed;
+      padding: 36px 0 22px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 30px;
+      padding-bottom: 25px;
+    }
+
+    .footer-title {
+      margin: 0 0 10px;
+      color: var(--white);
+      font-size: 18px;
+    }
+
+    .footer-copy {
+      max-width: 550px;
+      margin: 0;
+      color: #c2d0df;
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      gap: 10px 16px;
+    }
+
+    .footer-links a {
+      color: #e0e9f3;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      padding-top: 18px;
+      border-top: 1px solid #294159;
+      color: #b9c8d8;
+      font-size: 12px;
+    }
+
+    .footer-bottom p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 850px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .main-nav {
+        justify-content: flex-start;
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 52px 0;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      main {
+        padding: 32px 0 44px;
+      }
+
+      .panel {
+        padding: 23px;
+      }
+
+      .feature-grid,
+      .principles,
+      .resource-list,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        font-size: 26px;
+      }
+
+      .cta {
+        padding: 27px 20px;
+      }
+
+      .main-nav a {
+        padding: 7px 8px;
+        font-size: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Scam Recovery Help homepage">
+        <span class="brand-mark" aria-hidden="true">SR</span>
+        <span>
+          <span class="brand-name">Scam Recovery Help</span>
+          <span class="brand-tagline">Information. Protection. Next steps.</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="report.html">Report a Scam</a>
+        <a href="evidence.html">Evidence Center</a>
+        <a href="recovery.html">Recovery Guide</a>
+        <a href="security.html">Security Center</a>
+        <a href="alerts.html">Scam Alerts</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">About this resource</span>
+      <h1>Clear information for your next step after a scam.</h1>
+
+      <p>
+        Scam Recovery Help is an independent educational website designed
+        to help people understand common scams, organize relevant information,
+        find reporting resources, and take practical steps to protect themselves.
+      </p>
+
+      <span class="hero-note">
+        Independent information resource — not a government agency or recovery service.
+      </span>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <section class="intro-grid" aria-label="Our purpose and independence">
+      <article class="panel purpose-panel">
+        <h2>Why this website exists</h2>
+
+        <p>
+          Discovering that you have been scammed can be confusing and stressful.
+          People may be unsure who to contact, what information to preserve,
+          whether they can recover their money, or how to prevent further loss.
+        </p>
+
+        <p>
+          This website brings together general educational guidance and links
+          to relevant resources in one place. Its aim is to make possible next
+          steps easier to understand without promising a particular outcome.
+        </p>
+
+        <p>
+          Whether you are researching a suspicious message, documenting an
+          incident, securing an account, or looking for an official reporting
+          channel, you can use the information here as a starting point.
+        </p>
+      </article>
+
+      <aside class="panel independence-panel">
+        <h2>Who we are</h2>
+
+        <p>
+          Scam Recovery Help is presented as an independent information
+          resource. It is not affiliated with a government, police force,
+          financial institution, cryptocurrency exchange, law firm, or
+          official fraud investigation agency.
+        </p>
+
+        <p>
+          References to public agencies and other organizations are provided
+          to help visitors find their own official resources. Mentioning an
+          organization does not mean that it endorses this website.
+        </p>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="what-we-cover">
+      <h2 class="section-heading" id="what-we-cover">What you can find here</h2>
+
+      <p class="section-intro">
+        The website is organized around practical information that may help
+        you respond to a suspected or confirmed scam.
+      </p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-number" aria-hidden="true">01</div>
+          <h3>Reporting resources</h3>
+          <p>
+            Find starting points for locating official fraud-reporting
+            channels and learn what information you may need when making a report.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number" aria-hidden="true">02</div>
+          <h3>Evidence organization</h3>
+          <p>
+            Learn how to preserve relevant messages, transaction records,
+            dates, account details, and other information that may support a report.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number" aria-hidden="true">03</div>
+          <h3>Recovery guidance</h3>
+          <p>
+            Understand general options for contacting a bank, payment provider,
+            exchange, or other relevant organization after a suspected scam.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number" aria-hidden="true">04</div>
+          <h3>Account security</h3>
+          <p>
+            Review practical steps for protecting email, financial accounts,
+            devices, passwords, and other potentially affected services.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number" aria-hidden="true">05</div>
+          <h3>Scam awareness</h3>
+          <p>
+            Learn about common warning signs and patterns, including fake
+            investment opportunities, phishing, impersonation, and recovery scams.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-number" aria-hidden="true">06</div>
+          <h3>Further resources</h3>
+          <p>
+            Explore links and general guidance that can help you decide which
+            official organization or service to contact next.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="our-principles">
+      <h2 class="section-heading" id="our-principles">Principles that guide this website</h2>
+
+      <p class="section-intro">
+        Scam-related information should help people make informed decisions,
+        not pressure them into risky choices.
+      </p>
+
+      <div class="principles">
+        <article class="principle">
+          <span class="principle-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>No guaranteed recovery claims</h3>
+            <p>
+              No particular financial recovery, investigation, refund,
+              chargeback, or account restoration is promised.
+            </p>
+          </div>
+        </article>
+
+        <article class="principle">
+          <span class="principle-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>Encouraging official channels</h3>
+            <p>
+              Visitors are encouraged to contact relevant banks, payment
+              providers, platforms, law enforcement, and official agencies directly.
+            </p>
+          </div>
+        </article>
+
+        <article class="principle">
+          <span class="principle-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>Awareness of follow-up scams</h3>
+            <p>
+              We highlight the risk of people who promise to recover lost
+              money in exchange for upfront fees, passwords, or sensitive information.
+            </p>
+          </div>
+        </article>
+
+        <article class="principle">
+          <span class="principle-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>Respect for privacy</h3>
+            <p>
+              Visitors should avoid sharing passwords, authentication codes,
+              private keys, full payment credentials, or unnecessary personal
+              information on public pages or with unknown parties.
+            </p>
+          </div>
+        </article>
+
+        <article class="principle">
+          <span class="principle-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>Clear limitations</h3>
+            <p>
+              General educational material is not a substitute for
+              case-specific legal, financial, technical, or law-enforcement advice.
+            </p>
+          </div>
+        </article>
+
+        <article class="principle">
+          <span class="principle-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>Informed decision-making</h3>
+            <p>
+              The purpose is to help visitors understand possible next steps
+              without using fear, pressure, or unrealistic promises.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="using-resources">
+      <h2 class="section-heading" id="using-resources">How to use the website</h2>
+
+      <p class="section-intro">
+        Start with the page that best matches your immediate concern.
+        You can return to the other sections as needed.
+      </p>
+
+      <div class="resource-list">
+        <a class="resource-link" href="report.html">
+          <strong>Report a Scam</strong>
+          <span>Explore reporting resources and prepare information for a report.</span>
+        </a>
+
+        <a class="resource-link" href="evidence.html">
+          <strong>Evidence Center</strong>
+          <span>Review a checklist for preserving relevant records.</span>
+        </a>
+
+        <a class="resource-link" href="recovery.html">
+          <strong>Recovery Guide</strong>
+          <span>Learn about general steps to take after a suspected financial scam.</span>
+        </a>
+
+        <a class="resource-link" href="security.html">
+          <strong>Security Center</strong>
+          <span>Review account protection and device security practices.</span>
+        </a>
+
+        <a class="resource-link" href="alerts.html">
+          <strong>Scam Alerts</strong>
+          <span>Learn about common scam patterns and warning signs.</span>
+        </a>
+
+        <a class="resource-link" href="index.html">
+          <strong>Homepage</strong>
+          <span>Return to the main page and choose your next step.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="notice" aria-labelledby="important-limits">
+      <h2 id="important-limits">Important information and limitations</h2>
+
+      <p>
+        <strong>This website provides general educational information only.</strong>
+        It does not investigate individual cases, trace funds, freeze accounts,
+        contact banks on your behalf, provide legal representation, or recover money.
+      </p>
+
+      <p>
+        Recovery options depend on the circumstances, the payment method,
+        the organizations involved, applicable laws, and how much time has passed.
+        A bank, payment provider, platform, law-enforcement agency, or qualified
+        professional is best placed to explain the options available in your situation.
+      </p>
+
+      <p>
+        External websites are operated by their respective organizations.
+        Their availability, procedures, and content may change. Check that you
+        are using the genuine official website before sharing any information.
+      </p>
+
+      <p>
+        Never pay an unknown person who guarantees recovery, asks for your
+        password or one-time code, requests your cryptocurrency wallet's
+        recovery phrase, or pressures you to act immediately.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="faq">
+      <h2 class="section-heading" id="faq">Frequently asked questions</h2>
+
+      <div class="faq-list">
+        <details>
+          <summary>Is Scam Recovery Help a government website?</summary>
+          <p>
+            No. It is an independent educational resource and is not an official
+            government, police, or fraud-investigation website.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can this website recover my lost money?</summary>
+          <p>
+            No. This website does not receive or trace funds and cannot guarantee
+            recovery. Contact the bank, payment provider, exchange, or other
+            organization involved as soon as possible to ask about available options.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do I need to pay to use the information on this website?</summary>
+          <p>
+            The information presented on these pages is intended as educational
+            guidance. Be cautious of anyone claiming to represent this website
+            who asks for money or sensitive information.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I report a scam through this website?</summary>
+          <p>
+            The reporting page provides guidance and links to external resources.
+            Unless a specific reporting function is clearly provided, this website
+            does not submit reports to authorities or financial institutions for you.
+          </p>
+        </details>
+
+        <details>
+          <summary>What should I do if I have just been scammed?</summary>
+          <p>
+            Contact the relevant bank or payment provider promptly, preserve
+            messages and transaction records, secure any affected accounts,
+            and report the incident through an appropriate official channel.
+            Do not send additional money to someone promising guaranteed recovery.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is every link or resource guaranteed to be current?</summary>
+          <p>
+            No. External organizations may change their websites and procedures.
+            Confirm current details directly with the relevant organization
+            and verify that you are on its genuine official website.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="next-step">
+      <h2 id="next-step">Start with a practical next step</h2>
+
+      <p>
+        If you are dealing with a suspected scam, begin by preserving relevant
+        records and contacting the organization that handled the payment or
+        account. Use the resources here to help plan your next steps.
+      </p>
+
+      <div class="button-row">
+        <a class="button" href="report.html">Find Reporting Resources</a>
+        <a class="button button-secondary" href="evidence.html">Open Evidence Center</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-title">Scam Recovery Help</h2>
+          <p class="footer-copy">
+            An independent educational resource offering general information
+            about scam awareness, evidence preservation, reporting options,
+            recovery considerations, and online security.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="report.html">Report a Scam</a>
+          <a href="evidence.html">Evidence Center</a>
+          <a href="recovery.html">Recovery Guide</a>
+          <a href="security.html">Security Center</a>
+          <a href="alerts.html">Scam Alerts</a>
+          <a href="about.html" aria-current="page">About</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          <strong>Disclaimer:</strong> This website is not a government agency,
+          law firm, financial institution, or recovery service. Its content is
+          for general educational purposes and does not guarantee any outcome.
+        </p>
+
+        <p>
+          Always verify external resources and contact the relevant official
+          organization for advice about your individual circumstances.
+        </p>
+
+        <p>&copy; <span id="current-year"></span> Scam Recovery Help. Educational information only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practical guidance for protecting online accounts, devices, passwords, and personal information after a scam or suspected cybercrime.">
+  <meta name="robots" content="index, follow">
+  <title>Account & Device Security | Scam Recovery Help</title>
+
+  <style>
+    :root {
+      --navy: #102b46;
+      --navy-light: #1a466d;
+      --blue: #2463a0;
+      --pale-blue: #eaf2fb;
+      --gold: #e8b85b;
+      --ink: #1d2937;
+      --muted: #607080;
+      --paper: #f5f7fa;
+      --white: #ffffff;
+      --border: #dce3eb;
+      --green: #176b48;
+      --red: #a12c2c;
+      --shadow: 0 8px 24px rgba(16, 43, 70, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--blue);
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .site-header {
+      background: var(--navy);
+      color: var(--white);
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .header-inner {
+      width: min(1120px, 92%);
+      margin: auto;
+      padding: 22px 0 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border: 2px solid var(--gold);
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .brand-tagline {
+      display: block;
+      margin-top: 4px;
+      color: #d8e3ef;
+      font-size: 12px;
+      letter-spacing: 0.4px;
+    }
+
+    .header-note {
+      max-width: 300px;
+      color: #d8e3ef;
+      font-size: 13px;
+      text-align: right;
+    }
+
+    .main-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      width: min(1120px, 92%);
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 8px 0;
+    }
+
+    .nav-inner a {
+      color: var(--navy);
+      text-decoration: none;
+      padding: 10px 13px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-inner a:hover,
+    .nav-inner a[aria-current="page"] {
+      background: var(--pale-blue);
+      color: var(--blue);
+    }
+
+    .hero {
+      background: linear-gradient(125deg, var(--navy), var(--navy-light));
+      color: var(--white);
+      padding: 62px 0;
+    }
+
+    .hero-inner {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 12px 0 18px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 740px;
+      color: #e0eaf4;
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+      padding: 36px 0 56px;
+    }
+
+    .notice {
+      border-left: 5px solid var(--gold);
+      background: #fff8e9;
+      padding: 18px 21px;
+      margin-bottom: 30px;
+      border-radius: 0 7px 7px 0;
+    }
+
+    .notice strong {
+      color: var(--navy);
+    }
+
+    .section-heading {
+      margin: 42px 0 18px;
+      color: var(--navy);
+      font-size: 27px;
+      line-height: 1.3;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 800px;
+      margin-top: -8px;
+      margin-bottom: 22px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul,
+    .content-list {
+      padding-left: 21px;
+    }
+
+    .card li,
+    .content-list li {
+      margin-bottom: 9px;
+    }
+
+    .number {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      background: var(--pale-blue);
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .priority {
+      border-top: 4px solid var(--blue);
+    }
+
+    .security-checklist {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: var(--shadow);
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .check-item:last-of-type {
+      border-bottom: 0;
+    }
+
+    .check-item input {
+      margin-top: 6px;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      accent-color: var(--blue);
+      cursor: pointer;
+    }
+
+    .check-item label {
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .check-item input:checked + label {
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+
+    .check-progress {
+      margin: 0 0 15px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 9px;
+      border-radius: 20px;
+      background: var(--border);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: var(--green);
+      transition: width 0.2s ease;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 17px;
+      border: 1px solid var(--blue);
+      border-radius: 6px;
+      background: var(--blue);
+      color: var(--white);
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .button-secondary {
+      color: var(--navy);
+      background: var(--white);
+      border-color: var(--border);
+    }
+
+    .button-secondary:hover {
+      color: var(--white);
+    }
+
+    .warning-card {
+      border-left: 5px solid var(--red);
+      background: #fff;
+      padding: 22px 24px;
+      border-radius: 0 8px 8px 0;
+      box-shadow: var(--shadow);
+    }
+
+    .warning-card h3 {
+      color: var(--red);
+      margin-top: 0;
+    }
+
+    .info-panel {
+      background: var(--pale-blue);
+      border: 1px solid #cfdeee;
+      padding: 23px;
+      border-radius: 9px;
+      margin-top: 22px;
+    }
+
+    .info-panel h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .resource-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .resource-link {
+      display: block;
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+    }
+
+    .resource-link strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .resource-link span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-list details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 17px 20px;
+    }
+
+    .faq-list summary {
+      cursor: pointer;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .faq-list details p {
+      margin-bottom: 0;
+    }
+
+    .site-footer {
+      background: var(--navy);
+      color: #d8e3ef;
+      padding: 30px 0;
+    }
+
+    .footer-inner {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    .footer-inner a {
+      color: var(--white);
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      margin: 15px 0;
+    }
+
+    .footer-nav a {
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-small {
+      color: #bdcddd;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        align-items: flex-start;
+      }
+
+      .header-note {
+        text-align: left;
+      }
+
+      .hero {
+        padding: 43px 0;
+      }
+
+      .card-grid,
+      .resource-list {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner a {
+        padding: 9px 10px;
+      }
+
+      .card,
+      .security-checklist {
+        padding: 19px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Scam Recovery Help home">
+        <span class="brand-mark" aria-hidden="true">SR</span>
+        <span>
+          <span class="brand-name">Scam Recovery Help</span>
+          <span class="brand-tagline">Information. Protection. Next steps.</span>
+        </span>
+      </a>
+
+      <div class="header-note">
+        Independent educational resource for scam awareness and online safety.
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="report.html">Report a Scam</a>
+      <a href="evidence.html">Evidence Center</a>
+      <a href="recovery.html">Recovery Guide</a>
+      <a href="security.html" aria-current="page">Security Center</a>
+      <a href="alerts.html">Scam Alerts</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Security Center</div>
+      <h1>Protect your accounts, devices, and personal information</h1>
+      <p>
+        Practical steps to secure your digital life, respond to suspected account
+        compromise, recognize phishing attempts, and reduce the risk of further harm.
+      </p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="notice">
+      <strong>Start with your most important accounts.</strong>
+      If you suspect someone has access to your email, banking, payment, or mobile
+      accounts, use a trusted device and the provider's official website or app to
+      secure them. If money is being taken or unauthorized transactions are occurring,
+      contact the relevant bank or provider immediately.
+    </div>
+
+    <section aria-labelledby="first-steps">
+      <h2 class="section-heading" id="first-steps">Your first security steps</h2>
+      <p class="section-intro">
+        If you have clicked a suspicious link, shared a password, or noticed unfamiliar
+        activity, work through these steps in order where possible.
+      </p>
+
+      <div class="card-grid">
+        <article class="card priority">
+          <span class="number">1</span>
+          <h3>Secure your email account</h3>
+          <p>
+            Your email account can be used to reset passwords for many other services.
+            Secure it before moving on to less critical accounts.
+          </p>
+          <ul>
+            <li>Change the password from a trusted device.</li>
+            <li>Sign out unfamiliar sessions and devices.</li>
+            <li>Review recovery email addresses and phone numbers.</li>
+            <li>Check forwarding rules, filters, and connected apps for changes you did not make.</li>
+            <li>Enable multifactor authentication.</li>
+          </ul>
+        </article>
+
+        <article class="card priority">
+          <span class="number">2</span>
+          <h3>Protect financial accounts</h3>
+          <p>
+            Contact your bank, card issuer, mobile-money provider, or payment service
+            through a verified channel if you suspect unauthorized access.
+          </p>
+          <ul>
+            <li>Report suspicious transactions immediately.</li>
+            <li>Ask whether your card, account, or payment credentials should be blocked or replaced.</li>
+            <li>Review recent transactions and payment recipients.</li>
+            <li>Change compromised credentials and secure linked email accounts.</li>
+            <li>Keep case numbers and transaction references.</li>
+          </ul>
+        </article>
+
+        <article class="card priority">
+          <span class="number">3</span>
+          <h3>Change exposed passwords</h3>
+          <p>
+            If you reused a password on several sites, change it everywhere it was used.
+            Start with email, financial services, cloud storage, and social media.
+          </p>
+          <ul>
+            <li>Create a unique password for every account.</li>
+            <li>Use a reputable password manager if suitable for you.</li>
+            <li>Never share passwords or one-time verification codes with callers or messages.</li>
+            <li>Do not reuse an old password that may have been exposed.</li>
+          </ul>
+        </article>
+
+        <article class="card priority">
+          <span class="number">4</span>
+          <h3>Check your devices</h3>
+          <p>
+            If you suspect malicious software or remote access, avoid entering sensitive
+            passwords on the affected device until it has been assessed.
+          </p>
+          <ul>
+            <li>Update your operating system, browser, and applications.</li>
+            <li>Remove unfamiliar apps or browser extensions after checking what they are.</li>
+            <li>Run a reputable security scan where appropriate.</li>
+            <li>Review remote-access software and remove access you did not authorize.</li>
+            <li>Seek qualified technical help if the device still appears compromised.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="checklist-heading">
+      <h2 class="section-heading" id="checklist-heading">Personal security checklist</h2>
+      <p class="section-intro">
+        Use this checklist to track the actions you have completed. Your selections
+        stay in this page while it remains open; they are not uploaded or sent to us.
+      </p>
+
+      <div class="security-checklist">
+        <p class="check-progress" id="check-progress" aria-live="polite">
+          0 of 10 actions completed
+        </p>
+
+        <div
+          class="progress-track"
+          role="progressbar"
+          aria-label="Security checklist progress"
+          aria-valuemin="0"
+          aria-valuemax="10"
+          aria-valuenow="0"
+          id="progress-track"
+        >
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task1" class="security-task">
+          <label for="task1">I secured my primary email account and reviewed its recovery settings.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task2" class="security-task">
+          <label for="task2">I changed exposed or reused passwords.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task3" class="security-task">
+          <label for="task3">I enabled multifactor authentication where available.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task4" class="security-task">
+          <label for="task4">I reviewed active sessions and signed out unfamiliar devices.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task5" class="security-task">
+          <label for="task5">I checked banking, payment, and mobile-money transactions.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task6" class="security-task">
+          <label for="task6">I reported unauthorized financial activity to the relevant provider.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task7" class="security-task">
+          <label for="task7">I updated my device and reviewed unfamiliar apps or extensions.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task8" class="security-task">
+          <label for="task8">I checked recovery details and account forwarding settings.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task9" class="security-task">
+          <label for="task9">I saved relevant evidence and case references securely.</label>
+        </div>
+
+        <div class="check-item">
+          <input type="checkbox" id="task10" class="security-task">
+          <label for="task10">I reviewed recent account activity and removed unneeded access.</label>
+        </div>
+
+        <div class="button-row">
+          <button class="button button-secondary" type="button" id="reset-checklist">
+            Reset checklist
+          </button>
+          <button class="button" type="button" id="print-checklist">
+            Print checklist
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="password-heading">
+      <h2 class="section-heading" id="password-heading">Password and sign-in protection</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Use strong, unique passwords</h3>
+          <ul>
+            <li>Use long passwords or passphrases that are difficult to guess.</li>
+            <li>Use a different password for each important service.</li>
+            <li>Consider a reputable password manager to create and store passwords.</li>
+            <li>Never send passwords in chat messages or ordinary email.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Turn on multifactor authentication</h3>
+          <p>
+            Multifactor authentication (MFA) adds another step to sign-in. An
+            authenticator app, passkey, or security key may offer stronger protection
+            than text-message codes, depending on the service and your circumstances.
+          </p>
+          <p>
+            Keep recovery codes in a secure place. Never give an authentication code
+            to someone who contacts you unexpectedly.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Review account sessions</h3>
+          <p>
+            Many services let you see devices, recent sign-ins, active sessions, and
+            connected applications. Sign out unfamiliar sessions, revoke suspicious
+            app access, and change your password if compromise is suspected.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Protect account recovery</h3>
+          <p>
+            Keep recovery email addresses and phone numbers current and secure. Check
+            that nobody has changed your recovery options without permission. Store
+            backup codes separately from the account they protect.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="phishing-heading">
+      <h2 class="section-heading" id="phishing-heading">Recognize phishing and impersonation</h2>
+      <p class="section-intro">
+        Scammers may pretend to be banks, delivery companies, employers, technical
+        support, government agencies, friends, or recovery specialists.
+      </p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Warning signs</h3>
+          <ul>
+            <li>Unexpected messages asking you to click a link or open an attachment.</li>
+            <li>Urgent threats that your account will be closed unless you act immediately.</li>
+            <li>Requests for passwords, PINs, one-time codes, or remote access.</li>
+            <li>Payment instructions that suddenly change or use an unfamiliar recipient.</li>
+            <li>Web addresses that imitate a familiar organization but contain spelling changes or unusual domains.</li>
+            <li>Offers, prizes, refunds, or recovery guarantees that seem too good to be true.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>How to respond safely</h3>
+          <ul>
+            <li>Do not click links or open unexpected attachments.</li>
+            <li>Contact the organization using a number or website you independently verify.</li>
+            <li>Do not rely on caller ID, profile photos, or a displayed sender name alone.</li>
+            <li>Report suspicious messages using the service's official reporting tools.</li>
+            <li>If you already clicked or entered information, secure the affected account promptly.</li>
+            <li>If you installed an app at someone's request, assess the device and revoke unauthorized access.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="info-panel">
+        <h3>Check a website before signing in</h3>
+        <p>
+          Carefully inspect the domain name and open important services using a saved
+          bookmark or by typing the known address yourself. A padlock or HTTPS connection
+          encrypts a connection but does not prove that a website is legitimate.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="phone-heading">
+      <h2 class="section-heading" id="phone-heading">Protect your phone and SIM</h2>
+
+      <div class="card">
+        <ul class="content-list">
+          <li>Use a screen lock and keep your phone's software updated.</li>
+          <li>Install apps only from trusted sources and review requested permissions.</li>
+          <li>Set a SIM PIN if appropriate, and ask your mobile provider what protections are available against unauthorized SIM replacement or number transfer.</li>
+          <li>If your phone unexpectedly loses mobile service, contact your mobile provider through a verified channel. Unexpected service loss can have several causes, but it may warrant checking for a SIM-swap incident.</li>
+          <li>Secure the email and financial accounts linked to your phone number.</li>
+          <li>Back up important files securely and understand how to recover your device if it is lost.</li>
+          <li>Avoid sensitive transactions on devices you believe are compromised.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="recovery-scams-heading">
+      <h2 class="section-heading" id="recovery-scams-heading">Beware of recovery scams</h2>
+
+      <div class="warning-card">
+        <h3>Do not let a second scam make the situation worse</h3>
+        <p>
+          After a loss, you may be contacted by people claiming they can recover your
+          money, trace a cryptocurrency transaction, hack a scammer, or release frozen
+          funds. Some may use fake testimonials, forged documents, or official-looking
+          profiles to appear credible.
+        </p>
+        <ul class="content-list">
+          <li>Be suspicious of anyone who guarantees recovery or claims to have special access to your money.</li>
+          <li>Do not pay unexpected advance fees, taxes, clearance charges, or verification fees to unlock supposed recovered funds.</li>
+          <li>Never share your wallet seed phrase, private key, password, PIN, or one-time authentication code.</li>
+          <li>Do not install remote-access software at the request of an unsolicited caller or online contact.</li>
+          <li>Verify any lawyer, investigator, or service independently and understand the costs before agreeing.</li>
+          <li>Keep records of new suspicious approaches and report them to the appropriate platform or authority.</li>
+        </ul>
+        <p>
+          Legitimate banks, payment providers, law enforcement agencies, and other
+          organizations have different processes. Verify instructions directly with
+          the organization involved.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="resources-heading">
+      <h2 class="section-heading" id="resources-heading">Official security resources</h2>
+      <p class="section-intro">
+        These independent resources provide security advice or reporting options. Use
+        the official website for your country or service and confirm that a resource
+        is appropriate for your situation.
+      </p>
+
+      <div class="resource-list">
+        <a class="resource-link"
+           href="https://consumer.ftc.gov/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <strong>US Federal Trade Commission</strong>
+          <span>Consumer advice on scams, identity theft, and online safety.</span>
+        </a>
+
+        <a class="resource-link"
+           href="https://www.ncsc.gov.uk/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <strong>UK National Cyber Security Centre</strong>
+          <span>Cybersecurity guidance for individuals and organizations.</span>
+        </a>
+
+        <a class="resource-link"
+           href="https://www.cisa.gov/secure-our-world"
+           target="_blank"
+           rel="noopener noreferrer">
+          <strong>US CISA — Secure Our World</strong>
+          <span>Practical guidance on passwords, MFA, phishing, and software updates.</span>
+        </a>
+
+        <a class="resource-link"
+           href="https://www.cyber.gov.au/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <strong>Australian Cyber Security Centre</strong>
+          <span>Cybersecurity advice and information about reporting cybercrime in Australia.</span>
+        </a>
+
+        <a class="resource-link"
+           href="https://www.cbn.gov.ng/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <strong>Central Bank of Nigeria</strong>
+          <span>Official banking-sector information and consumer resources in Nigeria.</span>
+        </a>
+
+        <a class="resource-link"
+           href="https://www.interpol.int/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <strong>INTERPOL</strong>
+          <span>International police cooperation and information about cross-border crime.</span>
+        </a>
+      </div>
+
+      <p>
+        For service-specific security instructions, visit the official website or app
+        of your email provider, bank, mobile provider, social network, or payment service.
+        Do not assume that every organization listed here handles individual complaints
+        from every country.
+      </p>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <h2 class="section-heading" id="faq-heading">Frequently asked questions</h2>
+
+      <div class="faq-list">
+        <details>
+          <summary>What should I do if I gave a scammer my password?</summary>
+          <p>
+            From a trusted device, change the exposed password immediately. Change it
+            on every other service where you reused it. Sign out unfamiliar sessions,
+            check recovery settings, and enable MFA. If the account is financial or
+            connected to payments, contact the provider if unauthorized access may have
+            occurred.
+          </p>
+        </details>
+
+        <details>
+          <summary>What if I shared a one-time code or authentication approval?</summary>
+          <p>
+            Contact the affected service promptly through its official channel. Secure
+            the account, review recent activity, revoke suspicious sessions, and change
+            exposed credentials. Tell your bank or payment provider immediately if
+            financial access may be involved.
+          </p>
+        </details>
+
+        <details>
+          <summary>Should I delete every suspicious message?</summary>
+          <p>
+            Not necessarily. If the message may be evidence, preserve screenshots,
+            sender details, dates, links, and relevant reference numbers in a secure
+            location. Avoid opening suspicious links or attachments. You can report
+            the message through the relevant service's official tools.
+          </p>
+        </details>
+
+        <details>
+          <summary>What if I suspect my computer or phone has remote-access software?</summary>
+          <p>
+            Stop using the device for sensitive logins and financial activity until you
+            can assess it. From a separate trusted device, secure important accounts
+            and contact your financial provider if needed. Seek qualified technical
+            assistance if you cannot confidently remove unauthorized access.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can this website secure my accounts for me?</summary>
+          <p>
+            No. Scam Recovery Help provides general educational information. It does not
+            access, inspect, or change your accounts, and this checklist does not send
+            information to the website owner. Use the official service responsible for
+            each account to make security changes.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I guarantee that I will recover my money?</summary>
+          <p>
+            No. Recovery depends on the circumstances, payment method, provider
+            procedures, timing, and applicable law. Contact the relevant provider
+            promptly and report the incident to an appropriate authority. Be cautious
+            of anyone who promises a guaranteed outcome.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section aria-labelledby="next-heading">
+      <h2 class="section-heading" id="next-heading">Continue to the next step</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Organize your evidence</h3>
+          <p>
+            Keep relevant messages, transaction records, screenshots, and case numbers
+            in a secure location.
+          </p>
+          <a class="button" href="evidence.html">Visit Evidence Center</a>
+        </article>
+
+        <article class="card">
+          <h3>Report the incident</h3>
+          <p>
+            Learn how to contact your financial provider and find reporting resources
+            appropriate to your country.
+          </p>
+          <a class="button" href="report.html">View Reporting Guide</a>
+        </article>
+      </div>
+    </section>
+
+    <p class="footer-small" style="color: var(--muted); margin-top: 35px;">
+      <strong>Disclaimer:</strong> This page provides general educational information,
+      not individualized cybersecurity, legal, financial, or law-enforcement advice.
+      No outcome or recovery is guaranteed. Official processes vary by provider and
+      jurisdiction. Verify important instructions directly with the relevant organization.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <strong>Scam Recovery Help</strong>
+      <p>Information. Protection. Next steps.</p>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="report.html">Report a Scam</a>
+        <a href="evidence.html">Evidence Center</a>
+        <a href="recovery.html">Recovery Guide</a>
+        <a href="security.html">Security Center</a>
+        <a href="alerts.html">Scam Alerts</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <p class="footer-small">
+        Scam Recovery Help is an independent educational resource and is not a
+        government agency, bank, law enforcement body, or recovery service.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const tasks = Array.from(document.querySelectorAll(".security-task"));
+      const progressText = document.getElementById("check-progress");
+      const progressTrack = document.getElementById("progress-track");
+      const progressFill = document.getElementById("progress-fill");
+      const resetButton = document.getElementById("reset-checklist");
+      const printButton = document.getElementById("print-checklist");
+
+      function updateProgress() {
+        const completed = tasks.filter(function (task) {
+          return task.checked;
+        }).length;
+
+        const total = tasks.length;
+        const percentage = total ? (completed / total) * 100 : 0;
+
+        progressText.textContent =
+          completed + " of " + total + " actions completed";
+
+        progressFill.style.width = percentage + "%";
+        progressTrack.setAttribute("aria-valuenow", String(completed));
+      }
+
+      tasks.forEach(function (task) {
+        task.addEventListener("change", updateProgress);
+      });
+
+      resetButton.addEventListener("click", function () {
+        tasks.forEach(function (task) {
+          task.checked = false;
+        });
+
+        updateProgress();
+      });
+
+      printButton.addEventListener("click", function () {
+        window.print();
+      });
+
+      updateProgress();
+    })();
+  </script>
+</body>
+</html>

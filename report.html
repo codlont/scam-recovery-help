@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to report a scam, contact your bank, preserve evidence, and find official fraud reporting resources by country.">
+  <meta name="theme-color" content="#102b46">
+  <title>Report a Scam | Scam Recovery Help</title>
+  <style>
+    :root {
+      --navy: #102b46;
+      --navy-light: #1a466d;
+      --blue: #2463a0;
+      --pale: #eaf2fb;
+      --gold: #e8b85b;
+      --ink: #1d2937;
+      --muted: #607080;
+      --paper: #f5f7fa;
+      --white: #fff;
+      --border: #dce3eb;
+      --green: #176b52;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    a { color: var(--blue); }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+    .container { width: min(1120px, 92%); margin: auto; }
+    .topbar { background: #0a2035; color: #eaf1f8; padding: 8px 0; font-size: .83rem; }
+    .topbar-inner { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+    header { background: white; border-bottom: 1px solid var(--border); }
+    .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding: 16px 0; }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--navy); text-decoration: none; min-width: 220px; }
+    .brand-mark { width: 44px; height: 44px; display: grid; place-items: center; background: var(--navy); color: white; border-radius: 12px; font-size: 1.3rem; font-weight: 800; }
+    .brand-name { display: block; font-weight: 800; line-height: 1.2; }
+    .brand-tagline { display: block; color: var(--muted); font-size: .74rem; margin-top: 3px; }
+    nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; }
+    nav a { color: #33475b; text-decoration: none; font-weight: 700; font-size: .84rem; padding: 8px 10px; border-radius: 8px; }
+    nav a:hover, nav a[aria-current="page"] { background: var(--pale); color: var(--navy); }
+
+    .hero { background: linear-gradient(125deg, var(--navy), var(--navy-light)); color: white; padding: 62px 0; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .12em; color: var(--gold); font-size: .78rem; font-weight: 800; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.12; letter-spacing: -.03em; margin: 12px 0 18px; }
+    .hero p { max-width: 760px; color: #e1ebf4; font-size: 1.08rem; }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; padding: 12px 18px; border-radius: 9px; font-weight: 800; text-decoration: none; }
+    .btn-gold { background: var(--gold); color: #17283a; }
+    .btn-outline { border: 1px solid #b9cfe1; color: white; }
+    .notice { background: #fff8e8; border-left: 4px solid var(--gold); padding: 16px 18px; border-radius: 0 10px 10px 0; margin: 25px 0; }
+    .notice strong { color: #664600; }
+
+    main { padding-bottom: 60px; }
+    .section { padding: 52px 0 0; }
+    .section-title { color: var(--navy); font-size: clamp(1.65rem, 3vw, 2.3rem); line-height: 1.2; margin: 0 0 12px; }
+    .section-intro { max-width: 780px; color: var(--muted); margin: 0 0 25px; }
+    .country-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .country-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 24px; scroll-margin-top: 20px; }
+    .country-card h3 { color: var(--navy); font-size: 1.25rem; margin: 0 0 8px; }
+    .country-card p { color: var(--muted); margin: 0 0 15px; font-size: .94rem; }
+    .resource { padding: 13px 0; border-top: 1px solid var(--border); }
+    .resource a { font-weight: 800; text-decoration: none; }
+    .resource a:hover { text-decoration: underline; }
+    .resource p { font-size: .88rem; margin: 4px 0 0; }
+    .tag { display: inline-block; background: var(--pale); color: var(--navy); border-radius: 5px; padding: 3px 7px; font-size: .72rem; font-weight: 800; margin-bottom: 8px; }
+
+    .steps-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .step-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 22px; }
+    .step-number { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: var(--pale); color: var(--navy); font-weight: 800; margin-bottom: 14px; }
+    .step-card h3 { color: var(--navy); margin: 0 0 8px; font-size: 1.08rem; }
+    .step-card p { color: var(--muted); font-size: .92rem; margin: 0; }
+
+    .checklist { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 25px; }
+    .checklist label { display: flex; align-items: flex-start; gap: 11px; padding: 10px 0; border-bottom: 1px solid #edf0f4; cursor: pointer; }
+    .checklist label:last-child { border-bottom: 0; }
+    .checklist input { margin-top: 6px; accent-color: var(--blue); }
+    .checklist-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 15px; }
+    button { border: 0; border-radius: 8px; background: var(--navy); color: white; font-weight: 800; padding: 11px 15px; cursor: pointer; font-size: .9rem; }
+    button.secondary { background: #e8edf3; color: var(--navy); }
+    #checklist-status { font-size: .88rem; color: var(--muted); }
+
+    .faq-list { display: grid; gap: 12px; }
+    details { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+    summary { cursor: pointer; color: var(--navy); font-weight: 800; }
+    details p { color: var(--muted); margin-bottom: 0; }
+    .bottom-cta { background: var(--navy); color: white; padding: 32px; border-radius: 16px; margin-top: 50px; }
+    .bottom-cta h2 { margin-top: 0; }
+    .bottom-cta p { color: #d6e4ef; }
+    footer { background: #091c2e; color: #c8d5e1; padding: 35px 0 20px; }
+    .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 28px; }
+    footer h3 { color: white; font-size: 1rem; }
+    footer a { color: #dce9f5; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-links { display: grid; gap: 8px; font-size: .9rem; }
+    .disclaimer { color: #9eb0bf; font-size: .82rem; }
+    .footer-bottom { border-top: 1px solid #294052; margin-top: 24px; padding-top: 15px; font-size: .8rem; }
+
+    @media (max-width: 900px) {
+      .nav-wrap { align-items: flex-start; flex-direction: column; gap: 12px; }
+      nav { justify-content: flex-start; }
+      .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 620px) {
+      .country-grid, .steps-grid, .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding: 45px 0; }
+      .country-card { padding: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Independent scam information and reporting guidance</span>
+      <span>Worldwide resources</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Scam Recovery Help home">
+        <span class="brand-mark" aria-hidden="true">SR</span>
+        <span>
+          <span class="brand-name">Scam Recovery Help</span>
+          <span class="brand-tagline">Information. Protection. Next steps.</span>
+        </span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="report.html" aria-current="page">Report a Scam</a>
+        <a href="evidence.html">Evidence Center</a>
+        <a href="recovery.html">Recovery Guide</a>
+        <a href="security.html">Security</a>
+        <a href="alerts.html">Scam Alerts</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Reporting guidance</span>
+        <h1>Report the scam. Protect your next step.</h1>
+        <p>
+          Reporting can help alert financial providers and authorities, preserve
+          a record of what happened, and potentially prevent further harm.
+          Choose your country below to find relevant official resources.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-gold" href="#country-resources">Find official reporting resources</a>
+          <a class="btn btn-outline" href="#first-steps">What to do first</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="notice">
+        <strong>Important:</strong> Scam Recovery Help is an independent educational
+        website, not a government agency or police service. We do not receive or
+        investigate reports, contact banks on your behalf, or recover funds.
+        Use the official external services listed below to make a report.
+      </div>
+
+      <section class="section" id="first-steps">
+        <h2 class="section-title">What to do before you report</h2>
+        <p class="section-intro">
+          If money or personal information has been taken, take these steps as soon
+          as practical. Do not delay contacting your bank while trying to complete
+          every item on this page.
+        </p>
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <h3>Contact your bank or payment provider</h3>
+            <p>Use the official app, website, or number on your card. Explain the suspected fraud and ask whether a payment can be stopped, recalled, disputed, or investigated.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <h3>Secure your accounts</h3>
+            <p>Change compromised passwords from a trusted device. Secure your email, enable multi-factor authentication, and ask your provider to block unauthorized access where possible.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <h3>Preserve your evidence</h3>
+            <p>Keep transaction receipts, dates, messages, email headers, usernames, website addresses, phone numbers, and case references. Do not alter original files if you can avoid it.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">4</div>
+            <h3>Make an official report</h3>
+            <p>Choose the appropriate reporting route for your country and the type of fraud. Follow the official website's instructions and keep your report reference.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">5</div>
+            <h3>Report the account or platform</h3>
+            <p>If the scam happened through a social network, marketplace, messaging service, or website, report the account or listing through that platform's official tools.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">6</div>
+            <h3>Watch for follow-up scams</h3>
+            <p>Scammers may contact victims again pretending to be investigators or recovery agents. Never share passwords, one-time codes, or crypto wallet recovery phrases.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="country-resources">
+        <h2 class="section-title">Official reporting resources by country</h2>
+        <p class="section-intro">
+          These links lead to external organizations. Check their instructions and
+          eligibility before submitting information. If your country is not listed,
+          contact your local police or national consumer-protection or cybercrime
+          authority through a verified official website.
+        </p>
+
+        <div class="country-grid">
+          <article class="country-card" id="united-states">
+            <span class="tag">North America</span>
+            <h3>United States</h3>
+            <p>Consumer fraud, identity theft, internet crime, and local law enforcement.</p>
+            <div class="resource">
+              <a href="https://ReportFraud.ftc.gov/" target="_blank" rel="noopener noreferrer">Federal Trade Commission (FTC) ↗</a>
+              <p>Report consumer fraud, scams, and deceptive business practices.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer">FBI Internet Crime Complaint Center ↗</a>
+              <p>Submit a report about suspected internet-enabled crime.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.identitytheft.gov/" target="_blank" rel="noopener noreferrer">IdentityTheft.gov ↗</a>
+              <p>Guidance for people affected by identity theft.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.usa.gov/state-attorney-general" target="_blank" rel="noopener noreferrer">Find your state attorney general ↗</a>
+              <p>Find your state's consumer-protection office.</p>
+            </div>
+          </article>
+
+          <article class="country-card" id="united-kingdom">
+            <span class="tag">Europe</span>
+            <h3>United Kingdom</h3>
+            <p>Fraud and cybercrime reporting routes differ in Scotland and the rest of the UK.</p>
+            <div class="resource">
+              <a href="https://www.reportfraud.police.uk/" target="_blank" rel="noopener noreferrer">Report Fraud ↗</a>
+              <p>For people affected by fraud or cybercrime in England, Wales, and Northern Ireland.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.scotland.police.uk/" target="_blank" rel="noopener noreferrer">Police Scotland ↗</a>
+              <p>For reporting fraud in Scotland, use the official Police Scotland website or call 101 for non-emergencies.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.actionfraud.police.uk/" target="_blank" rel="noopener noreferrer">Action Fraud website ↗</a>
+              <p>Legacy reporting website; check for redirection to the current Report Fraud service.</p>
+            </div>
+          </article>
+
+          <article class="country-card" id="nigeria">
+            <span class="tag">West Africa</span>
+            <h3>Nigeria</h3>
+            <p>Use official police cybercrime resources and contact your financial provider promptly.</p>
+            <div class="resource">
+              <a href="https://nccc.npf.gov.ng/ereport/" target="_blank" rel="noopener noreferrer">Nigeria Police Force National Cybercrime Centre ↗</a>
+              <p>Visit the police cybercrime e-reporting portal and review its current requirements before submitting information.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.npf.gov.ng/" target="_blank" rel="noopener noreferrer">Nigeria Police Force ↗</a>
+              <p>Find official police information and reporting guidance.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.efcc.gov.ng/" target="_blank" rel="noopener noreferrer">Economic and Financial Crimes Commission (EFCC) ↗</a>
+              <p>Visit the official EFCC website for financial-crime information and complaint channels.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.cbn.gov.ng/" target="_blank" rel="noopener noreferrer">Central Bank of Nigeria ↗</a>
+              <p>Find official banking information and consumer complaint guidance.</p>
+            </div>
+          </article>
+
+          <article class="country-card" id="canada">
+            <span class="tag">North America</span>
+            <h3>Canada</h3>
+            <p>Report suspected fraud and cybercrime, and contact local police when appropriate.</p>
+            <div class="resource">
+              <a href="https://rcmp.ca/en/federal-policing/cybercrime/national-cybercrime-coordination-centre/report-cybercrime-and-fraud" target="_blank" rel="noopener noreferrer">RCMP: Report cybercrime and fraud ↗</a>
+              <p>Official reporting information from the Royal Canadian Mounted Police.</p>
+            </div>
+            <div class="resource">
+              <a href="https://antifraudcentre-centreantifraude.ca/" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre ↗</a>
+              <p>Fraud and identity-crime information and reporting resources.</p>
+            </div>
+            <div class="resource">
+              <a href="https://competition-bureau.canada.ca/en/fraud-and-scams" target="_blank" rel="noopener noreferrer">Competition Bureau Canada ↗</a>
+              <p>Information about fraud, scams, and deceptive marketing.</p>
+            </div>
+          </article>
+
+          <article class="country-card" id="australia">
+            <span class="tag">Oceania</span>
+            <h3>Australia</h3>
+            <p>Report scam activity and consider a separate police report if you lost money or experienced cybercrime.</p>
+            <div class="resource">
+              <a href="https://www.scamwatch.gov.au/report-a-scam" target="_blank" rel="noopener noreferrer">Scamwatch ↗</a>
+              <p>Report scam activity to Australia's National Anti-Scam Centre.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.cyber.gov.au/report-and-recover" target="_blank" rel="noopener noreferrer">Australian Cyber Security Centre ↗</a>
+              <p>Cybersecurity reporting and recovery guidance.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.police.gov.au/" target="_blank" rel="noopener noreferrer">Australian Federal Police ↗</a>
+              <p>Official federal police information. Contact local police where appropriate.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.idcare.org/" target="_blank" rel="noopener noreferrer">IDCARE ↗</a>
+              <p>Support and guidance for people affected by identity or cyber-related misuse.</p>
+            </div>
+          </article>
+
+          <article class="country-card" id="other-countries">
+            <span class="tag">Other locations</span>
+            <h3>Other countries</h3>
+            <p>If your country is not listed, start with your own national authorities and financial provider.</p>
+            <div class="resource">
+              <a href="https://www.interpol.int/Who-we-are/Member-countries" target="_blank" rel="noopener noreferrer">INTERPOL member countries ↗</a>
+              <p>Find your country's police organization. INTERPOL is not a replacement for filing a local police report.</p>
+            </div>
+            <div class="resource">
+              <a href="https://www.consumerinternational.org/" target="_blank" rel="noopener noreferrer">Consumers International ↗</a>
+              <p>Explore consumer-protection information and organizations around the world.</p>
+            </div>
+            <div class="resource">
+              <strong>Also contact your provider</strong>
+              <p>Notify the bank, card issuer, money-transfer service, cryptocurrency exchange, or payment app involved.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="report-checklist">
+        <h2 class="section-title">Prepare your reporting checklist</h2>
+        <p class="section-intro">
+          Use this checklist to organize what you have before opening an official
+          reporting form. You do not need to have every item before contacting your bank or police.
+        </p>
+        <div class="checklist">
+          <label><input type="checkbox"> <span>Approximate date and time of the incident.</span></label>
+          <label><input type="checkbox"> <span>A clear summary of what happened, in chronological order.</span></label>
+          <label><input type="checkbox"> <span>Amount and currency lost, if any, and transaction references.</span></label>
+          <label><input type="checkbox"> <span>Payment method and name of the receiving bank, platform, or wallet where known.</span></label>
+          <label><input type="checkbox"> <span>Scammer contact details, usernames, phone numbers, email addresses, and website links.</span></label>
+          <label><input type="checkbox"> <span>Copies of messages, screenshots, receipts, and relevant emails.</span></label>
+          <label><input type="checkbox"> <span>Any bank, platform, or police report reference numbers already received.</span></label>
+          <label><input type="checkbox"> <span>A record of actions taken and the dates you contacted providers.</span></label>
+          <div class="checklist-actions">
+            <button type="button" id="check-progress">Check progress</button>
+            <button type="button" class="secondary" id="clear-checklist">Clear checklist</button>
+            <span id="checklist-status" aria-live="polite">0 of 8 items checked.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Common reporting questions</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Should I contact my bank before filing a police report?</summary>
+            <p>If money or payment credentials are involved, contact your bank or payment provider immediately. You can contact them while preparing a police or government report; do not wait for one process to finish before notifying the other.</p>
+          </details>
+          <details>
+            <summary>Does filing a report mean I will get my money back?</summary>
+            <p>No. Reporting creates a record and may help authorities or providers assess the incident, but it does not guarantee an investigation, a chargeback, a reversal, or recovery of funds.</p>
+          </details>
+          <details>
+            <summary>Should I pay someone who says they can recover my money?</summary>
+            <p>Be very cautious. A person who guarantees recovery, demands an upfront fee, requests your password or wallet recovery phrase, or claims they need a payment to release funds may be running another scam.</p>
+          </details>
+          <details>
+            <summary>What if I only received a suspicious message?</summary>
+            <p>You may still be able to report the message to the relevant national scam-reporting service and the platform where it appeared. Do not click links or open unexpected attachments just to investigate.</p>
+          </details>
+          <details>
+            <summary>Can I report a scam that happened in another country?</summary>
+            <p>You can usually notify your local police or national reporting service and the financial provider involved. The best route depends on where you live, where the incident occurred, and the payment method. Use official channels for guidance.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="bottom-cta">
+        <h2>Keep your evidence and protect your accounts</h2>
+        <p>After reporting, save the reference number and continue securing your accounts. Recovery outcomes vary, and no website or agent can honestly guarantee that your funds will be returned.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-gold" href="evidence.html">Open Evidence Center</a>
+          <a class="btn btn-outline" href="recovery.html">Read Recovery Guide</a>
+          <a class="btn btn-outline" href="index.html">Return Home</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Scam Recovery Help</h3>
+          <p class="disclaimer">An independent educational resource for scam reporting, digital security, and recovery guidance.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="evidence.html">Evidence Center</a>
+            <a href="recovery.html">Recovery Guide</a>
+            <a href="security.html">Security Center</a>
+          </div>
+        </div>
+        <div>
+          <h3>More information</h3>
+          <div class="footer-links">
+            <a href="alerts.html">Recovery Scam Alerts</a>
+            <a href="about.html">About & Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Scam Recovery Help. Educational information only.</p>
+        <p class="disclaimer">
+          This website is not affiliated with any government, police service, bank,
+          or law enforcement agency. It does not accept reports or guarantee fund
+          recovery. External links lead to third-party websites; verify their
+          addresses before submitting personal information.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const checkboxes = Array.from(
+      document.querySelectorAll('.checklist input[type="checkbox"]')
+    );
+    const status = document.getElementById("checklist-status");
+
+    function updateChecklistStatus() {
+      const checked = checkboxes.filter(item => item.checked).length;
+      status.textContent = checked + " of " + checkboxes.length + " items checked.";
+    }
+
+    checkboxes.forEach(item => {
+      item.addEventListener("change", updateChecklistStatus);
+    });
+
+    document.getElementById("check-progress").addEventListener("click", updateChecklistStatus);
+
+    document.getElementById("clear-checklist").addEventListener("click", () => {
+      checkboxes.forEach(item => {
+        item.checked = false;
+      });
+      updateChecklistStatus();
+    });
+
+    updateChecklistStatus();
+  </script>
+</body>
+</html>

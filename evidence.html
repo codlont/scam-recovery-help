@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to organize and preserve evidence after a suspected scam. Use this practical checklist to prepare records for official reporting.">
+  <meta name="theme-color" content="#102b46">
+  <title>Evidence Center | Scam Recovery Help</title>
+
+  <style>
+    :root {
+      --navy: #102b46;
+      --navy-light: #1a466d;
+      --blue: #2463a0;
+      --pale-blue: #eaf2fb;
+      --gold: #e8b85b;
+      --ink: #1d2937;
+      --muted: #607080;
+      --paper: #f5f7fa;
+      --white: #ffffff;
+      --border: #dce3eb;
+      --green: #176b4d;
+      --red: #a62f35;
+      --shadow: 0 8px 28px rgba(16, 43, 70, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    a {
+      color: var(--blue);
+      overflow-wrap: anywhere;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--navy);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      color: var(--navy);
+      background: var(--gold);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .brand-tagline {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+
+    nav a {
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: var(--navy);
+      background: var(--pale-blue);
+    }
+
+    .hero {
+      padding: 66px 0 58px;
+      color: var(--white);
+      background: linear-gradient(125deg, var(--navy), var(--navy-light));
+    }
+
+    .hero-content {
+      max-width: 790px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 0 18px;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.1;
+      letter-spacing: -1.2px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0;
+      color: #e3edf7;
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 17px;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      filter: brightness(0.96);
+    }
+
+    .button-outline {
+      border-color: #8da7c1;
+      background: transparent;
+      color: var(--white);
+    }
+
+    .button-secondary {
+      border-color: var(--border);
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    main {
+      padding: 42px 0 64px;
+    }
+
+    .notice {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ead7a8;
+      border-radius: var(--radius);
+      background: #fff9e9;
+    }
+
+    .notice-icon {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: #f7e7b9;
+      color: var(--navy);
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .notice h2 {
+      margin: 0 0 5px;
+      color: var(--navy);
+      font-size: 17px;
+    }
+
+    .notice p {
+      margin: 0;
+      color: #5b4c2d;
+      font-size: 14px;
+    }
+
+    .section-heading {
+      margin-bottom: 22px;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.2;
+    }
+
+    .section-heading p {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(270px, 0.8fr);
+      align-items: start;
+      gap: 24px;
+    }
+
+    .panel,
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .panel {
+      padding: 26px;
+    }
+
+    .panel h2,
+    .panel h3,
+    .card h3 {
+      color: var(--navy);
+    }
+
+    .panel h2 {
+      margin: 0 0 8px;
+      font-size: 23px;
+    }
+
+    .panel-intro {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .progress-wrap {
+      margin-bottom: 22px;
+      padding: 16px;
+      border-radius: 12px;
+      background: var(--pale-blue);
+    }
+
+    .progress-labels {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .progress-track {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 99px;
+      background: #d2dfed;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--blue);
+      transition: width 0.2s ease;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 12px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      background: var(--white);
+      cursor: pointer;
+    }
+
+    .check-item:hover {
+      border-color: #9eb8d3;
+      background: #fbfdff;
+    }
+
+    .check-item input {
+      width: 19px;
+      height: 19px;
+      margin: 3px 0 0;
+      flex-shrink: 0;
+      accent-color: var(--blue);
+      cursor: pointer;
+    }
+
+    .check-item strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .check-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .check-item.done {
+      border-color: #b8d9ca;
+      background: #f3fbf7;
+    }
+
+    .check-item.done strong {
+      color: var(--green);
+    }
+
+    .check-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .sidebar {
+      display: grid;
+      gap: 18px;
+    }
+
+    .side-card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+
+    .side-card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .side-card p,
+    .side-card li {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .side-card ul {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    .side-card li + li {
+      margin-top: 8px;
+    }
+
+    .content-section {
+      margin-top: 52px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 22px;
+      box-shadow: none;
+    }
+
+    .card-number {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+      background: var(--pale-blue);
+      color: var(--blue);
+      font-weight: 800;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .warning-list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .warning-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .warning-list li::before {
+      content: "!";
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #fbe7e7;
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .link-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .resource-link {
+      display: block;
+      padding: 15px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--white);
+      text-decoration: none;
+    }
+
+    .resource-link strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--navy);
+    }
+
+    .resource-link span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .resource-link:hover {
+      border-color: #9eb8d3;
+      background: #fbfdff;
+    }
+
+    .bottom-cta {
+      margin-top: 48px;
+      padding: 30px;
+      border-radius: var(--radius);
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .bottom-cta h2 {
+      margin: 0 0 8px;
+      font-size: 25px;
+    }
+
+    .bottom-cta p {
+      max-width: 720px;
+      margin: 0 0 18px;
+      color: #dce8f5;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-inner p {
+      max-width: 660px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .status-message {
+      min-height: 24px;
+      margin-top: 12px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .nav-wrap {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: flex-start;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding: 48px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .panel {
+        padding: 18px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+
+      .notice {
+        padding: 15px;
+      }
+
+      nav a {
+        padding: 8px;
+      }
+    }
+
+    @media print {
+      header,
+      .hero-actions,
+      .check-actions,
+      .sidebar,
+      footer,
+      .bottom-cta {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      main {
+        padding: 0;
+      }
+
+      .panel,
+      .card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      .progress-wrap {
+        border: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Scam Recovery Help home">
+        <span class="brand-mark" aria-hidden="true">SR</span>
+        <span>
+          <span class="brand-name">Scam Recovery Help</span>
+          <span class="brand-tagline">Information. Protection. Next steps.</span>
+        </span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="report.html">Report a Scam</a>
+        <a href="evidence.html" aria-current="page">Evidence Center</a>
+        <a href="recovery.html">Recovery Guide</a>
+        <a href="security.html">Security</a>
+        <a href="alerts.html">Scam Alerts</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="eyebrow">Evidence Center</span>
+      <h1>Organize the evidence. Protect the original records.</h1>
+      <p>
+        A clear record of what happened can help you explain a suspected scam
+        to your bank, payment provider, platform, or law-enforcement agency.
+        Use this checklist to prepare your information carefully.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button" href="#checklist">Start the checklist</a>
+        <a class="button button-outline" href="report.html">Reporting guidance</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="notice" aria-labelledby="urgent-title">
+      <div class="notice-icon" aria-hidden="true">!</div>
+      <div>
+        <h2 id="urgent-title">Act quickly if money or account access is at risk</h2>
+        <p>
+          Contact your bank, card issuer, mobile-money provider, or payment
+          service using its official contact details. Ask whether a payment
+          can be stopped, recalled, disputed, or investigated. If an account
+          is compromised, secure it immediately. Do not delay urgent action
+          while collecting every item on this checklist.
+        </p>
+      </div>
+    </section>
+
+    <div class="layout" id="checklist">
+      <section class="panel" aria-labelledby="checklist-title">
+        <h2 id="checklist-title">Your evidence checklist</h2>
+        <p class="panel-intro">
+          Tick each item as you prepare it. Your progress is shown on this page
+          only; this checklist does not upload or submit your information.
+        </p>
+
+        <div class="progress-wrap">
+          <div class="progress-labels">
+            <span>Preparation progress</span>
+            <span id="progress-count" aria-live="polite">0 of 10 completed</span>
+          </div>
+          <div
+            class="progress-track"
+            id="progress-track"
+            role="progressbar"
+            aria-label="Evidence checklist progress"
+            aria-valuemin="0"
+            aria-valuemax="10"
+            aria-valuenow="0"
+          >
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
+
+        <div class="checklist" id="evidence-checklist">
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>1. Save messages and conversations</strong>
+              <span>
+                Preserve relevant emails, SMS messages, chat conversations,
+                social-media messages, usernames, and profile links. Keep
+                original messages where possible.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>2. Keep payment records</strong>
+              <span>
+                Save transaction receipts, bank statements, transfer references,
+                dates, amounts, recipient details, and payment-provider records.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>3. Capture relevant screenshots</strong>
+              <span>
+                Capture the full context, including visible dates, account
+                names, web addresses, transaction references, and the message
+                surrounding important claims.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>4. Record websites and account details</strong>
+              <span>
+                Note website addresses, email addresses, phone numbers,
+                usernames, advertisement links, and account IDs that are
+                relevant to the incident.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>5. Build a simple timeline</strong>
+              <span>
+                List when contact began, what was promised, when payments
+                occurred, when you noticed the problem, and what happened next.
+                Include time zones when relevant.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>6. Preserve files in their original form</strong>
+              <span>
+                Keep original emails, files, receipts, and exports where
+                available. Make working copies instead of editing or replacing
+                the originals.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>7. Record actions already taken</strong>
+              <span>
+                Note when you contacted your bank, platform, or authorities,
+                any reference numbers provided, and the responses received.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>8. Secure your accounts and devices</strong>
+              <span>
+                Change compromised passwords from a trusted device, enable
+                multi-factor authentication, and review active sessions.
+                Preserve relevant evidence before deleting anything.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>9. Create a backup</strong>
+              <span>
+                Store a copy in a secure location you control. Restrict access
+                to sensitive files and avoid posting evidence publicly.
+              </span>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span>
+              <strong>10. Prepare a concise incident summary</strong>
+              <span>
+                Summarize what happened, how contact was made, the amount
+                involved, the relevant dates, and the steps you have taken.
+                Separate confirmed facts from suspicions.
+              </span>
+            </span>
+          </label>
+        </div>
+
+        <div class="check-actions">
+          <button class="button" type="button" id="print-button">
+            Print checklist
+          </button>
+          <button class="button button-secondary" type="button" id="reset-button">
+            Reset checklist
+          </button>
+        </div>
+
+        <div class="status-message" id="status-message" role="status" aria-live="polite"></div>
+      </section>
+
+      <aside class="sidebar">
+        <section class="side-card">
+          <h3>Protect your privacy</h3>
+          <p>
+            Evidence can contain information that criminals could misuse.
+            Share it only through appropriate, trusted channels.
+          </p>
+          <ul>
+            <li>Never publish passwords, PINs, recovery codes, or one-time codes.</li>
+            <li>Do not upload full identity documents to unknown websites.</li>
+            <li>Keep an unaltered original before making a redacted copy.</li>
+            <li>Check recipients and website addresses before sharing files.</li>
+          </ul>
+        </section>
+
+        <section class="side-card">
+          <h3>Suggested folder structure</h3>
+          <p>Create a private folder on a device or storage service you control.</p>
+          <ul>
+            <li><strong>01 — Timeline</strong></li>
+            <li><strong>02 — Messages</strong></li>
+            <li><strong>03 — Payments</strong></li>
+            <li><strong>04 — Screenshots</strong></li>
+            <li><strong>05 — Reports and references</strong></li>
+          </ul>
+          <p>
+            Use clear filenames such as
+            <em>2026-10-29-payment-receipt</em>. Avoid including sensitive
+            personal details in filenames.
+          </p>
+        </section>
+
+        <section class="side-card">
+          <h3>Keep your account safe</h3>
+          <p>
+            If you shared a password, reused a compromised password, or gave
+            someone remote access to your device, treat that as a separate
+            security issue and take steps to secure your accounts.
+          </p>
+          <a href="security.html">Visit the Security page</a>
+        </section>
+      </aside>
+    </div>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>What useful evidence looks like</h2>
+        <p>
+          Clear, organized records help others understand the sequence of
+          events without having to guess what each file means.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-number">01</div>
+          <h3>Clear context</h3>
+          <p>
+            Keep enough surrounding information to explain who communicated,
+            what was said, and when it happened.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-number">02</div>
+          <h3>Accurate dates and amounts</h3>
+          <p>
+            Record the original currency, amount, transaction date, reference
+            number, and payment method whenever available.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-number">03</div>
+          <h3>Originals and copies</h3>
+          <p>
+            Preserve original files. If you annotate or redact a copy for
+            sharing, label it clearly and retain the original securely.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Important evidence safety rules</h2>
+        <p>
+          Gathering evidence should not put you at greater risk or interfere
+          with a legitimate investigation.
+        </p>
+      </div>
+
+      <div class="panel">
+        <ul class="warning-list">
+          <li>
+            Do not threaten, confront, or attempt to investigate a suspected
+            scammer in person.
+          </li>
+          <li>
+            Do not hack accounts, bypass security controls, or access systems
+            you are not authorized to use to obtain evidence.
+          </li>
+          <li>
+            Do not delete potentially relevant messages or files simply because
+            they are upsetting. Secure your accounts and preserve what you can.
+          </li>
+          <li>
+            Do not send more money to someone who promises to recover your
+            funds, unlock a wallet, or release a refund in exchange for an
+            upfront fee.
+          </li>
+          <li>
+            Avoid sharing your complete evidence folder with strangers or
+            unverified recovery services. A bank or authority may provide
+            instructions about what to submit.
+          </li>
+          <li>
+            Follow local law and any instructions from your bank, lawyer, or
+            investigating authority about evidence preservation and disclosure.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Where to take your records</h2>
+        <p>
+          Start with the organization that can act on the specific problem.
+          Use independently verified contact details and official websites.
+        </p>
+      </div>
+
+      <div class="link-list">
+        <a class="resource-link" href="report.html">
+          <strong>Report a suspected scam</strong>
+          <span>
+            Review reporting options and find guidance for different countries.
+          </span>
+        </a>
+
+        <a class="resource-link" href="recovery.html">
+          <strong>Understand possible recovery steps</strong>
+          <span>
+            Learn what to ask your bank or payment provider and what to expect.
+          </span>
+        </a>
+
+        <a class="resource-link" href="security.html">
+          <strong>Protect accounts and devices</strong>
+          <span>
+            Review practical steps if your login details or device may be
+            compromised.
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="bottom-cta">
+      <h2>Ready to make a report?</h2>
+      <p>
+        Use your timeline and organized records to explain the incident.
+        Report promptly, keep copies of any submission, and save all reference
+        numbers. Recovery is not guaranteed, but prompt action may help protect
+        accounts and preserve available options.
+      </p>
+      <a class="button" href="report.html">Go to Report a Scam</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>
+        <strong>Scam Recovery Help</strong><br>
+        Independent informational resource. This website is not a government
+        agency, law-enforcement body, bank, law firm, or recovery service.
+        It does not guarantee that funds can be recovered. Verify reporting
+        channels independently and seek qualified professional advice when
+        needed.
+      </p>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="report.html">Report</a>
+        <a href="recovery.html">Recovery Guide</a>
+        <a href="security.html">Security</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const checklist = document.getElementById("evidence-checklist");
+      const checkboxes = Array.from(
+        checklist.querySelectorAll('input[type="checkbox"]')
+      );
+
+      const progressCount = document.getElementById("progress-count");
+      const progressBar = document.getElementById("progress-bar");
+      const progressTrack = document.getElementById("progress-track");
+      const statusMessage = document.getElementById("status-message");
+      const printButton = document.getElementById("print-button");
+      const resetButton = document.getElementById("reset-button");
+
+      function updateProgress() {
+        const completed = checkboxes.filter(function (checkbox) {
+          return checkbox.checked;
+        }).length;
+
+        const total = checkboxes.length;
+        const percentage = total === 0 ? 0 : (completed / total) * 100;
+
+        progressCount.textContent =
+          completed + " of " + total + " completed";
+
+        progressBar.style.width = percentage + "%";
+        progressTrack.setAttribute("aria-valuenow", String(completed));
+
+        checkboxes.forEach(function (checkbox) {
+          const item = checkbox.closest(".check-item");
+
+          if (item) {
+            item.classList.toggle("done", checkbox.checked);
+          }
+        });
+
+        if (completed === total) {
+          statusMessage.textContent =
+            "Checklist complete. Review your records before sharing them.";
+        } else {
+          statusMessage.textContent = "";
+        }
+      }
+
+      checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", updateProgress);
+      });
+
+      printButton.addEventListener("click", function () {
+        window.print();
+      });
+
+      resetButton.addEventListener("click", function () {
+        const confirmed = window.confirm(
+          "Reset all checklist items? This cannot be undone."
+        );
+
+        if (!confirmed) {
+          return;
+        }
+
+        checkboxes.forEach(function (checkbox) {
+          checkbox.checked = false;
+        });
+
+        updateProgress();
+        statusMessage.textContent = "Checklist reset.";
+      });
+
+      updateProgress();
+    })();
+  </script>
+</body>
+</html>
